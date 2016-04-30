@@ -1,0 +1,6 @@
+" this is a private vim config file
+" add this file to your .vimrc by add command as following
+"   source /path/to/this/file
+
+
+exec pathogen#infect()
