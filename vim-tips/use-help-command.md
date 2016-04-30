@@ -2,14 +2,14 @@
 =====
 在Vim中查找相关命令可以使用`help`命令。
 
-```Vim
+```viml
 :help
 ```
 
 1 得到Vim命令的索引
 -----
 
-```Vim
+```viml
 :help index
 ```
 
@@ -41,21 +41,21 @@ For an overview of built-in functions see |functions|.
 2 查找一些选项
 -----
 例如查找显示行号的选项，可以使用下面命令
-```Vim
+```viml
 :help 'number'
 ```
 
 3 查找insert模式下的命令
 -----
 查找insert模式下的命令，需要以`i_`开头，例如：
-```Vim
+```viml
 :help i_CTRL-H
 ```
 
 4 查找Vim的启动选项
 -----
 Vim的启动选项一般是以`-`开始，例如：
-```Vim
+```viml
 :help -t
 ```
 
