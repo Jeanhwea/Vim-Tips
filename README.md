@@ -5,9 +5,10 @@ Vim-Tips
 目录
 ==================
 1. [使用16进制模式编辑文件](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/edit-a-file-in-hex-mode.md)
-2. [编辑的时候快速移动光标](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/move-faster-while-editing.md)
-3. [使用超级用户权限保存编辑过的文件](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/save-a-file-as-the-super-user.md)
-4. [使用`help`来查找命令](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/use-help-command.md)
+2. [简单地跳转到变量或函数的声明](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/go-to-declaration-of-variables-and-functions.md)
+3. [编辑的时候快速移动光标](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/move-faster-while-editing.md)
+4. [使用超级用户权限保存编辑过的文件](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/save-a-file-as-the-super-user.md)
+5. [使用`help`来查找命令](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/use-help-command.md)
 
 说明
 ================
