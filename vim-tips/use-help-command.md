@@ -8,10 +8,14 @@
 
 1 得到Vim命令的索引
 -----
+
 ```Vim
 :help index
 ```
-得到结果如下： ```Text
+
+得到结果如下：
+
+```
                                                                 *index*
 This file contains a list of all commands for each mode, with a tag and a
 short description.  The lists are sorted on ASCII value.
