@@ -15,9 +15,9 @@ set cindent
 ---------------
 这么多选项，各有各的意思。其中`cindent`和`set shiftwidth=4`是关于C语言风格的缩进，详细见[C语言相关缩进风格](Intent-c-style-text.md)。
 * `tabstop` : 设置显示tab时需要多少个空白，一般`<Tab>`是8个空白，空格是一个空白。
-* `softtabstop` : 设置当你通过键盘触发了一个`<Tab>`健操作时，他会将其转换为多少个宽度的字符。
+* `softtabstop` : 设置当你通过键盘触发了一个`<Tab>`健操作时，他会将其转换为多少个宽度的空白。
 * `expandtab` :设置展开tab，即在输入`<Tab>`健时，插入相应数量的空格来代替`<Tab>`。
-* `autoindent` : 开机自动缩进。
+* `autoindent` : 开启自动缩进。
 
 仅仅使用空格
 ----------------
