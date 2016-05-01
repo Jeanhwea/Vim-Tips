@@ -9,7 +9,7 @@ numTips=0
 for fileName in `ls vim-tips`
 do 
     ((numTips++))
-    chName=`cat $tipsDir/$fileName | head -n 1`
+    chName=`head -n 1 $tipsDir/$fileName`
     linkUrl=`echo $githubUrl$fileName`
     printf "%d. [%s](%s)\n" $numTips $chName $linkUrl >> README.md
 done
