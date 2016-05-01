@@ -1,13 +1,12 @@
-使用`help`来查找命令
-=====
-在Vim中查找相关命令可以使用`help`命令。
-
+使用help来查找命令
+===================
+在Vim中查找相关命令可以使用help命令。
 ```viml
 :help
 ```
 
 1 得到Vim命令的索引
------
+---------------
 
 ```viml
 :help index
@@ -16,7 +15,7 @@
 得到结果如下：
 
 ```
-                                                                *index*
+                                                           *index*
 This file contains a list of all commands for each mode, with a tag and a
 short description.  The lists are sorted on ASCII value.
 
