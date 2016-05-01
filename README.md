@@ -21,3 +21,5 @@ Vim-Tips
 * [vim-tips](https://github.com/Jeanhwea/Vim-Tips/tree/master/vim-tips) : Vim使用过程中的小技巧
 
 本文的各种小结来自互联网和作者平时使用的心得。
+
+Email：hujinghui@buaa.edu.cn
