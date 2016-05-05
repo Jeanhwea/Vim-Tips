@@ -16,5 +16,11 @@ git config --global diff.tool vimdiff
 git difftool
 ```
 
+vimdiff工具来解决冲突
+========================
+
+* `dp` : 当前窗口中引起不同的内容被放到另一窗口中缺少这段内容的地方去了, diff-put
+* `do` : 从另一窗口中的对应位置取来了差异的内容, diff-obtain
+
 
 
