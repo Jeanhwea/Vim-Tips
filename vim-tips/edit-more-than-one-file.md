@@ -7,6 +7,12 @@ $ vim main.c vector.c path.c
 ```
 
 在编辑多个文件时，我们可以使用下面的命令来查看编辑的文件列表
+
+```viml
+:args
+```
+
+查看结果如下：
 ```
 // Copyright 2012 Rui Ueyama. Released under the MIT license.
 
