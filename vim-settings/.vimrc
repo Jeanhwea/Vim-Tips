@@ -9,7 +9,7 @@ unlet s:cpo_save
 set backspace=indent,eol,start
 set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
-set history=50
+set history=5000
 set nomodeline
 set printoptions=paper:letter
 set ruler
