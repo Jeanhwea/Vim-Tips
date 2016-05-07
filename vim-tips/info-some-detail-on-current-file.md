@@ -57,3 +57,31 @@ function! ID_search()
 "~/.vim/setup/basic.vim" 29 lines --72%--                     21,1          66%
 ```
 
+还可以使用`g Ctrl-g`来统计当前文档的词数以及其他信息。
+```viml
+" this is a private vim config file
+" add this file to your .vimrc by add command as following
+"   source /path/to/this/file
+
+set history=5000
+" set number
+set ruler
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+" set cindent
+
+" need molokai.vim colorscheme
+" set t_co=256
+" let g:molokai_original=1
+" let g:rehash256=1
+" colorscheme molokai
+
+map _u :call ID_search()<Bar>execute "/\\<" . g:word . "\\>"<CR>
+map _n :n<Bar>execute "/\\<" . g:word . "\\>"<CR>
+
+Col 1 of 13; Line 8 of 29; Word 31 of 103; Byte 167 of 659    8,1           Top
+```
+
