@@ -6,7 +6,7 @@ cat README.header > README.md
 
 # inject table of contents
 numTips=0
-for fileName in `ls vim-tips`
+for fileName in `ls $tipsDir`
 do 
     ((numTips++))
     chName=`head -n 1 $tipsDir/$fileName`
