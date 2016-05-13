@@ -3,5 +3,7 @@
 " :cabbrev     -> Abbreviations for the command line only
 
 " iabbrev myEmail hujinghui@buaa.edu.cn
-iabbrev jh author: Jeanhwea
-iabbrev utf8 # -*- coding: utf-8 -*-
+iabbrev pyutf8 # -*- coding: utf-8 -*-
+
+" insert currect directory
+" iabbrev <silent> CWD <C-R>=getcwd()<CR>

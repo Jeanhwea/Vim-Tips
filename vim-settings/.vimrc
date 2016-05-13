@@ -17,9 +17,14 @@ set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vi
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 " vim: set ft=vim :
 
-" my personal vim script
+" remap the leader key
+let mapleader = ","
+let g:mapleader = ","
+
+" my vim scripts
 source ~/.vim/setup/abbreviations.vim
-source ~/.vim/setup/key_bindings.vim
 source ~/.vim/setup/basic.vim
+source ~/.vim/setup/functions.vim
+source ~/.vim/setup/key_bindings.vim
 source ~/.vim/setup/plugin_settings.vim
 
