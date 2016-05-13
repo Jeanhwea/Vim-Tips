@@ -24,11 +24,12 @@ Vim-Tips
 18. [编译C语言时使quickfix快速修复错误](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/qiuckfix-errors-while-compiling-c-source-files.md)
 19. [重复录入](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/repeate-an-insertion.md)
 20. [使用超级用户权限保存编辑过的文件](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/save-a-file-as-the-super-user.md)
-21. [排序和反转行](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/sort-and-reverse-lines.md)
-22. [分隔窗口](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/split-windows.md)
-23. [保存会话与恢复会话](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/store-session-and-restore-from-older-session.md)
-24. [使用help来查找命令](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/use-help-command.md)
-25. [vimdiff工具](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/vimdiff-tools.md)
+21. [显示不可见字符](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/show-invisibles.md)
+22. [排序和反转行](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/sort-and-reverse-lines.md)
+23. [分隔窗口](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/split-windows.md)
+24. [保存会话与恢复会话](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/store-session-and-restore-from-older-session.md)
+25. [使用help来查找命令](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/use-help-command.md)
+26. [vimdiff工具](https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/vimdiff-tools.md)
 
 说明
 ================
