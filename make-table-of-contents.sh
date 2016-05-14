@@ -7,7 +7,7 @@ cat README.header > README.md
 # inject table of contents
 numTips=0
 for fileName in `ls $tipsDir`
-do 
+do
     ((numTips++))
     chName=`head -n 1 $tipsDir/$fileName`
     linkUrl=`echo $githubUrl$fileName`

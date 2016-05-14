@@ -15,8 +15,16 @@ imap <silent> <C-T><C-T> <C-R>=strftime("%l:%M:%p")<CR>
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 " set listchars=tab:▸\ ,eol:¬
-set listchars=tab:▸\ ,eol:☠
+" set listchars=tab:▸\ ,eol:☠
+set listchars=tab:▸\ ,trail:♀
 
 " Shortcut to rapidly toggle `set number`
 nmap <leader>n :set number!<CR>
+
+" Shortcut to edit a new file
+map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
 
