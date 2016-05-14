@@ -7,3 +7,6 @@ exec pathogen#infect()
 
 " repeat
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
+" gundo
+nmap <F5> :GundoToggle<CR>
