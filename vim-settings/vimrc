@@ -1,3 +1,5 @@
+" vim:set foldmethod=marker:
+" defalult setting generate by :mkvimrc {{{1
 version 6.0
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -14,14 +16,13 @@ set nomodeline
 set printoptions=paper:letter
 set ruler
 set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim74,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
-set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
-" vim: set ft=vim :
+set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc "}}}
 
-" remap the leader key
+" remap the leader key to "," {{{1
 let mapleader = ","
-let g:mapleader = ","
+let g:mapleader = "," "}}}
 
-" my vim scripts
+" source my own scripts
 source ~/.vim/setup/abbreviations.vim
 source ~/.vim/setup/basic.vim
 source ~/.vim/setup/functions.vim

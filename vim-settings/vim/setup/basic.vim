@@ -6,8 +6,15 @@ set history=5000
 set ruler
 
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-set autoindent
+
+" Use the same symbols as TextMate for tabstops and EOLs
+" set listchars=tab:▸\ ,eol:¬
+" set listchars=tab:▸\ ,eol:☠
+set listchars=tab:▸\ ,trail:♀
 set list
+
+" Set modeline
+set modeline
 
 if has("autocmd")
     filetype on
@@ -17,14 +24,15 @@ if has("autocmd")
     autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType css  setlocal ts=2 sts=2 sw=2 expandtab
 
-    " set cindent
-    autocmd FileType c setlocal cindent
-    autocmd FileType cpp setlocal cindent
-    autocmd FileType java setlocal cindent
+    " set cindent autoindent
+    autocmd FileType c    setlocal cindent autoindent
+    autocmd FileType cpp  setlocal cindent autoindent
+    autocmd FileType java setlocal cindent autoindent
 
     " set list chars
     autocmd FileType text setlocal listchars=tab:▸\ ,eol:☠
-    autocmd FileType mkd setlocal listchars=tab:▸\ ,eol:☠
+    autocmd FileType mkd  setlocal listchars=tab:▸\ ,eol:☠
+    autocmd FileType vim  setlocal listchars=tab:▸\ ,eol:☠
 
 endif
 

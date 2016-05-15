@@ -15,10 +15,6 @@ imap <silent> <C-T><C-T> <C-R>=strftime("%l:%M:%p")<CR>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>li :set list!<CR>
-" Use the same symbols as TextMate for tabstops and EOLs
-" set listchars=tab:▸\ ,eol:¬
-" set listchars=tab:▸\ ,eol:☠
-set listchars=tab:▸\ ,trail:♀
 
 " Shortcut to rapidly toggle `set number`
 nmap <leader>nu :set number!<CR>
