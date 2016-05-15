@@ -27,10 +27,17 @@ if has("autocmd")
     autocmd FileType mkd setlocal listchars=tab:▸\ ,eol:☠
 
 endif
+
+
 " need molokai.vim colorscheme
 " set t_Co=256
-" let g:molokai_original=1
-" let g:rehash256=1
-" export TERM=xterm-256color, in your gnome-terminal
+
+" set if you prefer the scheme to match the original monokai background color
+let g:molokai_original=1
+let g:rehash256=1
 colorscheme molokai
+
+" export TERM=xterm-256color, in your gnome-terminal
+" notice that molokai colorscheme need 256 color support
+
 
