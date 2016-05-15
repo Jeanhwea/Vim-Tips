@@ -9,6 +9,8 @@
 " read python - run a python script output to this file
 :nmap <leader>rpy <ESC>:w<CR>:r ! python % <CR>
 
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+
 " insert time string
 imap <silent> <C-D><C-D> <C-R>=strftime("%e/%b/%Y")<CR>
 imap <silent> <C-T><C-T> <C-R>=strftime("%l:%M:%p")<CR>
