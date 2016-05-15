@@ -19,8 +19,8 @@
 $ git clone https://github.com/Jeanhwea/Vim-Tips.git
 
 # 建立相应的符号连接
-$ ln -s /path/to/Vim-Tips/vim-settings/vimrc .vimrc
-$ ln -s /path/to/Vim-Tips/vim-settings/vim .vim
+$ ln -s /path/to/Vim-Tips/vim-settings/vimrc ~/.vimrc
+$ ln -s /path/to/Vim-Tips/vim-settings/vim   ~/.vim
 ```
 
 
