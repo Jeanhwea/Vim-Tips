@@ -17,12 +17,13 @@
 "                                                                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" }}}
 " Defaults {{{1
+set backspace=indent,eol,start
 set history=5000
+set list
+set listchars=tab:▸\ ,eol:¬
+set modeline
 set ruler
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-set listchars=tab:▸\ ,eol:¬
-set list
-set modeline
 "}}}
 " FileType related settings {{{1
 if has("autocmd")
