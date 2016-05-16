@@ -23,6 +23,6 @@ let mapleader = ","
 let g:mapleader = "," "}}}
 
 " source my own scripts
-source ~/.vim/mine.vim
+source ~/.vim/vimrc.vim
 source ~/.vim/abbreviations.vim
 

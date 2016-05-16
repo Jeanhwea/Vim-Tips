@@ -1,4 +1,21 @@
 " vim:set foldmethod=marker:
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" {{{1
+"         _                          _                                   "
+"        | |                        | |                                  "
+"        | |   ___    __ _   _ __   | |__   __      __   ___    __ _     "
+"    _   | |  / _ \  / _` | | '_ \  | '_ \  \ \ /\ / /  / _ \  / _` |    "
+"   | |__| | |  __/ | (_| | | | | | | | | |  \ V  V /  |  __/ | (_| |    "
+"    \____/   \___|  \__,_| |_| |_| |_| |_|   \_/\_/    \___|  \__,_|    "
+"                                                                        "
+"                                                                        "
+" This vimrc.vim file is a personal vim configuration file.              "
+" It's free for you to use and share                                     "
+"                                                                        "
+" author : Jinghui Hu                                                    "
+" email  : hujinghui@buaa.edu.cn                                         "
+" github : https://github.com/Jeanhwea/                                  "
+"                                                                        "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" }}}
 " Defaults {{{1
 set history=5000
 set ruler
@@ -47,8 +64,8 @@ function! Preserve(command) " maintain the state and execute the command {{{2
     " Clean up: restore previous search history, and cursor position
     let @/=_s
     call cursor(l, c)
-endfunction 
-" }}} 
+endfunction
+" }}}
 function! Stab() " set tabstop, softtabstop and shiftwidth to the same value {{{2
     let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
     if l:tabstop > 0
@@ -88,12 +105,12 @@ function! QuickfixFilenames() " add a quickfixdo just like `argdo` `bufdo` and `
         let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
     endfor
     return join(values(buffer_numbers))
-endfunction 
+endfunction
 " Using this, like following steps, see: https://github.com/nelstrom/vim-qargs
 " :Ggrep findme
 " :Qargs
 " :argdo %s/findme/replacement/gc
-" :argdo update 
+" :argdo update
 command! -nargs=0 -bar Qargs execute 'args ' . QuickfixFilenames()
 " }}}
 "}}}
@@ -125,7 +142,7 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 "}}}
 " Plugins settings {{{1
 " pathogen {{{2
-exec pathogen#infect() 
+exec pathogen#infect()
 " }}}
 " repeat {{{2
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
