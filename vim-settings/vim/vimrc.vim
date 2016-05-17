@@ -17,32 +17,40 @@
 "                                                                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" }}}
 " Defaults {{{1
+set history=1000
+set dictionary+=/usr/share/dict/words
 set backspace=indent,eol,start
-set history=5000
 set list
 set listchars=tab:▸\ ,eol:¬
 set modeline
 set ruler
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+set commentstring=\/\/\ %s
+set grepprg=grep\ -rnh\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
+set virtualedit=block
 "}}}
 " FileType related settings {{{1
 if has("autocmd")
-    filetype on
-    " set tabstop softtabstop shiftwidth expandtab
-    autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
-    autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
-    autocmd FileType css  setlocal ts=2 sts=2 sw=2 expandtab
+    filetype plugin indent on
+    " set tabstop softtabstop shiftwidth expandtab/noexpandtab
+    autocmd FileType make       setlocal ts=8 sts=8 sw=8 et
+    autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noet
+    autocmd FileType html       setlocal ts=2 sts=2 sw=2 noet
+    autocmd FileType css        setlocal ts=2 sts=2 sw=2 noet
     " set cindent autoindent
-    autocmd FileType c    setlocal cindent autoindent
-    autocmd FileType cpp  setlocal cindent autoindent
-    autocmd FileType java setlocal cindent autoindent
-    " set list chars
-    autocmd FileType text setlocal listchars=tab:▸\ ,eol:☠
-    autocmd FileType mkd  setlocal listchars=tab:▸\ ,eol:☠
-    autocmd FileType vim  setlocal listchars=tab:▸\ ,eol:☠
-    autocmd FileType java setlocal listchars=tab:▸\ ,trail:♀,eol:☠
+    autocmd FileType c          setlocal cin ai
+    autocmd FileType cpp        setlocal cin ai
+    autocmd FileType java       setlocal cin ai
+    " set listchars
+    autocmd FileType text       setlocal lcs=tab:▸\ ,eol:☠
+    autocmd FileType mkd        setlocal lcs=tab:▸\ ,eol:☠
+    autocmd FileType vim        setlocal lcs=tab:▸\ ,eol:☠
+    autocmd FileType java       setlocal lcs=tab:▸\ ,trail:♀,eol:☠
     " set dictionary
-    autocmd FileType java setlocal dict+=~/.vim/dict/java.dict
+    autocmd FileType java       setlocal dict+=~/.vim/dict/java.dict
+    " set commentstring
+    autocmd FileType vim        setlocal cms=\"\ %s
+    autocmd FileType python     setlocal cms=\#\ %s
 endif
 "}}}
 " Colorscheme {{{1
@@ -140,8 +148,11 @@ map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " }}}
+" Digraph {{{2
+:nmap <leader>di :digraphs<CR>
+" }}}
 "}}}
-" Plugins settings {{{1
+" Plugins {{{1
 " pathogen {{{2
 exec pathogen#infect()
 " }}}
@@ -184,5 +195,8 @@ imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 " imap <buffer> <C-J>s <Plug>(JavaComplete-Generate-AccessorSetter)
 " imap <buffer> <C-J>g <Plug>(JavaComplete-Generate-AccessorGetter)
 " imap <buffer> <C-J>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" }}}
+" vim-markdown {{{2
+let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', 'vim', 'bash=sh']
 " }}}
 "}}}
