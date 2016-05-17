@@ -28,6 +28,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set commentstring=\/\/\ %s
 set grepprg=grep\ -rnh\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
 set virtualedit=block
+" set relativenumber
 "}}}
 " FileType related settings {{{1
 if has("autocmd")
@@ -122,6 +123,24 @@ endfunction
 " :argdo update
 command! -nargs=0 -bar Qargs execute 'args ' . QuickfixFilenames()
 " }}}
+function! WinMove(key) "move to the window in the direction shown, or create a new window {{{2
+    let t:curwin = winnr()
+    exec "wincmd ".a:key
+    if (t:curwin == winnr())
+        if (match(a:key,'[jk]'))
+            wincmd v
+        else
+            wincmd s
+        endif
+        exec "wincmd ".a:key
+    endif
+endfunction
+" Window movement shortcuts
+nmap <C-h> :call WinMove('h')<cr>
+nmap <C-j> :call WinMove('j')<cr>
+nmap <C-k> :call WinMove('k')<cr>
+nmap <C-l> :call WinMove('l')<cr>
+" }}}
 "}}}
 " Shortcuts {{{1
 " Python command {{{2
@@ -161,7 +180,7 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " }}}
 " gundo {{{2
 " Toggle undo tree
-nmap <leader>ud :GundoToggle<CR>
+nmap <leader>u :GundoToggle<CR>
 " }}}
 " figitive {{{2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -198,5 +217,22 @@ imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 " }}}
 " vim-markdown {{{2
 let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', 'vim', 'bash=sh']
+" }}}
+" nerdtree {{{2
+nmap <leader>n :NERDTreeToggle<CR>
+" }}}
+" ctrlp {{{2
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+" set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " Linux/MacOSX
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+" let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
+let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 " }}}
 "}}}
