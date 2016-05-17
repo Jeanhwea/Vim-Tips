@@ -17,5 +17,5 @@ let mapleader="\<Space>"
 let g:mapleader="\<Space>"
 "}}}
 " source my own scripts
-source ~/.vim/vimrc.vim
 source ~/.vim/abbreviations.vim
+source ~/.vim/vimrc.vim

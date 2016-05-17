@@ -167,5 +167,22 @@ let g:UltiSnipsEditSplit="vertical"
 if has("autocmd")
     autocmd FileType java setlocal omnifunc=javacomplete#Complete
 endif
+" smart imports
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+nmap <F5> <Plug>(JavaComplete-Imports-Add)
+imap <F5> <Plug>(JavaComplete-Imports-Add)
+nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+" getters and setters
+nmap <buffer> <leader>jA <Plug>(JavaComplete-Generate-Accessors)
+nmap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+nmap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+nmap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+imap <buffer> <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
+imap <buffer> <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
+imap <buffer> <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 " }}}
 "}}}
