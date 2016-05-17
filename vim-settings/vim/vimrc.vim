@@ -157,9 +157,9 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " }}}
 " utilsnips {{{2
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-J>"
+let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 " }}}
@@ -177,12 +177,12 @@ imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 " getters and setters
-nmap <buffer> <leader>jA <Plug>(JavaComplete-Generate-Accessors)
-nmap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
-nmap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
-nmap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
-imap <buffer> <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
-imap <buffer> <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
-imap <buffer> <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" nmap <buffer> <leader>jA <Plug>(JavaComplete-Generate-Accessors)
+" nmap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+" nmap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+" nmap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" imap <buffer> <C-J>s <Plug>(JavaComplete-Generate-AccessorSetter)
+" imap <buffer> <C-J>g <Plug>(JavaComplete-Generate-AccessorGetter)
+" imap <buffer> <C-J>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 " }}}
 "}}}
