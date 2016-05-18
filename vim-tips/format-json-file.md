@@ -21,7 +21,7 @@ echo '{"a":1, "b":2, "c":3}' | python -mjson.tool
 
 为了操作方便，可以在你的`vimrc`中添加一个键位绑定，例如：
 ```viml
-nnoremap <Leader>j :%!python -mjson.tool
+nnoremap <Leader>j :%!python -mjson.tool<CR>
 ```
 
 
