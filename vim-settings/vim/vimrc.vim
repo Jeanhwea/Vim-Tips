@@ -144,6 +144,22 @@ nnoremap <C-l> :call WinMove('l')<cr>
 " nnoremap <C-j> :call WinMove('j')<cr>
 " nnoremap <C-k> :call WinMove('k')<cr>
 " }}}
+function! s:GrepOperator(type) " grep words in current directory {{{2
+    let saved_unnamed_register = @@
+    if a:type ==# 'v'
+        normal! `<v`>y
+    elseif a:type ==# 'char'
+        normal! `[v`]y
+    else
+        return
+    endif
+    silent execute "grep! -R " . shellescape(@@) . " ."
+    copen
+    let @@ = saved_unnamed_register
+endfunction
+nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call <SID>GrepOperator(visualmode())<cr>
+" }}}
 "}}}
 " Shortcuts {{{1
 " Python command {{{2
