@@ -28,6 +28,9 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set commentstring=\/\/\ %s
 set grepprg=grep\ -rnh\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
 set virtualedit=block
+set wildmode=list:longest,full
+set wildignore+=*.o,*.obj,*~,*.class
+set wildignore+=*.png,*.jpg,*.gif,*.xpm,*.tiff
 " set relativenumber
 "}}}
 " FileType related settings {{{1
@@ -48,7 +51,7 @@ if has("autocmd")
     autocmd FileType vim        setlocal lcs=tab:▸\ ,eol:☠
     autocmd FileType java       setlocal lcs=tab:▸\ ,trail:♀,eol:☠
     " set dictionary
-    autocmd FileType java       setlocal dict+=~/.vim/dict/java.dict
+    " autocmd FileType java       setlocal dict+=~/.vim/dict/java.dict
     " set commentstring
     autocmd FileType vim        setlocal cms=\"\ %s
     autocmd FileType python     setlocal cms=\#\ %s
@@ -136,10 +139,10 @@ function! WinMove(key) "move to the window in the direction shown, or create a n
     endif
 endfunction
 " Window movement shortcuts
-nmap <C-h> :call WinMove('h')<cr>
-nmap <C-j> :call WinMove('j')<cr>
-nmap <C-k> :call WinMove('k')<cr>
-nmap <C-l> :call WinMove('l')<cr>
+nmap <C-H> :call WinMove('h')<cr>
+nmap <C-L> :call WinMove('l')<cr>
+" nmap <C-J> :call WinMove('j')<cr>
+" nmap <C-K> :call WinMove('k')<cr>
 " }}}
 "}}}
 " Shortcuts {{{1
@@ -242,5 +245,84 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" }}}
+" neocomplete {{{2
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default'    : '',
+    \ 'bash'       : $HOME.'/.bash_history',
+    \ 'vimshell'   : $HOME.'/.viminfo',
+    \ 'c'          : $HOME.'/.dict/c.dict',
+    \ 'cpp'        : $HOME.'/.dict/c.dict',
+    \ 'cs'         : $HOME.'/.dict/cs.dict',
+    \ 'css'        : $HOME.'/.dict/css.dict',
+    \ 'html'       : $HOME.'/.dict/html.dict',
+    \ 'java'       : $HOME.'/.dict/java.dict',
+    \ 'javascript' : $HOME.'/.dict/javascript.dict',
+    \ 'node'       : $HOME.'/.dict/node.dict',
+    \ 'php'        : $HOME.'/.dict/php.dict',
+    \ 'python'     : $HOME.'/.dict/python.dict',
+    \ 'ruby'       : $HOME.'/.dict/ruby.dict',
+    \ 'tex'        : $HOME.'/.dict/tex.dict',
+    \ 'vim'        : $HOME.'/.dict/vim.dict'
+\ }
+" Define keyword.
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+" Plugin key-mappings.
+inoremap <expr><C-G>     neocomplete#undo_completion()
+inoremap <expr><C-L>     neocomplete#complete_common_string()
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-R>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return (pumvisible() ? "\<C-Y>" : "" ) . "\<CR>"
+  " For no inserting <CR> key.
+  "return pumvisible() ? "\<C-Y>" : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-H> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+" Close popup by <Space>.
+"inoremap <expr><Space> pumvisible() ? "\<C-Y>" : "\<Space>"
+" AutoComplPop like behavior.
+"let g:neocomplete#enable_auto_select = 1
+" Shell like behavior(not recommended).
+"set completeopt+=longest
+"let g:neocomplete#enable_auto_select = 1
+"let g:neocomplete#disable_auto_complete = 1
+"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-X>\<C-U>"
+" Enable omni completion.
+if has("autocmd")
+    autocmd FileType css        setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType markdown   setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType html       setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType python     setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType xml        setlocal omnifunc=xmlcomplete#CompleteTags
+endif
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+" For perlomni.vim setting.
+" https://github.com/c9s/perlomni.vim
+let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " }}}
 "}}}
