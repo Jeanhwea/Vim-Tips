@@ -139,10 +139,10 @@ function! WinMove(key) "move to the window in the direction shown, or create a n
     endif
 endfunction
 " Window movement shortcuts
-nmap <C-H> :call WinMove('h')<cr>
-nmap <C-L> :call WinMove('l')<cr>
-" nmap <C-J> :call WinMove('j')<cr>
-" nmap <C-K> :call WinMove('k')<cr>
+nmap <C-h> :call WinMove('h')<cr>
+nmap <C-l> :call WinMove('l')<cr>
+" nmap <C-j> :call WinMove('j')<cr>
+" nmap <C-k> :call WinMove('k')<cr>
 " }}}
 "}}}
 " Shortcuts {{{1
@@ -155,8 +155,8 @@ nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 nmap _= :call Preserve("g/^\\s*$/d")<CR>
 " }}}
 " Insert date and time {{{2
-imap <silent> <C-D><C-D> <C-R>=strftime("%e/%b/%Y")<CR>
-imap <silent> <C-T><C-T> <C-R>=strftime("%l:%M:%p")<CR>
+imap <silent> <C-d><C-d> <C-r>=strftime("%e/%b/%Y")<CR>
+imap <silent> <C-t><C-t> <C-r>=strftime("%l:%M:%p")<CR>
 "}}}
 " Toggle `set list` {{{2
 nmap <leader>li :set list!<CR>
@@ -165,10 +165,10 @@ nmap <leader>li :set list!<CR>
 nmap <leader>nu :set number!<CR>
 " }}}
 " Editing a new file in current directory {{{2
-map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ew :e <C-r>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-r>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-r>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-r>=expand("%:p:h") . "/" <CR>
 " }}}
 " Digraph {{{2
 :nmap <leader>di :digraphs<CR>
@@ -191,8 +191,8 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " utilsnips {{{2
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-J>"
-let g:UltiSnipsJumpBackwardTrigger="<C-K>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 " }}}
@@ -214,9 +214,9 @@ imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 " nmap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
 " nmap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
 " nmap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
-" imap <buffer> <C-J>s <Plug>(JavaComplete-Generate-AccessorSetter)
-" imap <buffer> <C-J>g <Plug>(JavaComplete-Generate-AccessorGetter)
-" imap <buffer> <C-J>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" imap <buffer> <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
+" imap <buffer> <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
+" imap <buffer> <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 " }}}
 " vim-markdown {{{2
 let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', 'vim', 'bash=sh']
@@ -225,7 +225,7 @@ let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', '
 nmap <leader>n :NERDTreeToggle<CR>
 " }}}
 " ctrlp {{{2
-let g:ctrlp_map = '<C-P>'
+let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 " set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
@@ -281,30 +281,30 @@ if !exists('g:neocomplete#keyword_patterns')
 endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 " Plugin key-mappings.
-inoremap <expr><C-G>     neocomplete#undo_completion()
-inoremap <expr><C-L>     neocomplete#complete_common_string()
+inoremap <expr><C-g>     neocomplete#undo_completion()
+inoremap <expr><C-l>     neocomplete#complete_common_string()
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-R>=<SID>my_cr_function()<CR>
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return (pumvisible() ? "\<C-Y>" : "" ) . "\<CR>"
+  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
   " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-Y>" : "\<CR>"
+  "return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-H> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <Space>.
-"inoremap <expr><Space> pumvisible() ? "\<C-Y>" : "\<Space>"
+"inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 " AutoComplPop like behavior.
 "let g:neocomplete#enable_auto_select = 1
 " Shell like behavior(not recommended).
 "set completeopt+=longest
 "let g:neocomplete#enable_auto_select = 1
 "let g:neocomplete#disable_auto_complete = 1
-"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-X>\<C-U>"
+"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
 " Enable omni completion.
 if has("autocmd")
     autocmd FileType css        setlocal omnifunc=csscomplete#CompleteCSS
