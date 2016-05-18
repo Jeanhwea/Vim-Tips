@@ -139,39 +139,39 @@ function! WinMove(key) "move to the window in the direction shown, or create a n
     endif
 endfunction
 " Window movement shortcuts
-nmap <C-h> :call WinMove('h')<cr>
-nmap <C-l> :call WinMove('l')<cr>
-" nmap <C-j> :call WinMove('j')<cr>
-" nmap <C-k> :call WinMove('k')<cr>
+nnoremap <C-h> :call WinMove('h')<cr>
+nnoremap <C-l> :call WinMove('l')<cr>
+" nnoremap <C-j> :call WinMove('j')<cr>
+" nnoremap <C-k> :call WinMove('k')<cr>
 " }}}
 "}}}
 " Shortcuts {{{1
 " Python command {{{2
-:nmap <leader>py <ESC>:w<CR>:! python % <CR>
-:nmap <leader>rpy <ESC>:w<CR>:r ! python % <CR>
+:nnoremap <leader>py <ESC>:w<CR>:! python % <CR>
+:nnoremap <leader>rpy <ESC>:w<CR>:r ! python % <CR>
 " }}}
 " Remove trails and blank lines {{{2
-nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
-nmap _= :call Preserve("g/^\\s*$/d")<CR>
+nnoremap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+nnoremap _= :call Preserve("g/^\\s*$/d")<CR>
 " }}}
 " Insert date and time {{{2
-imap <silent> <C-d><C-d> <C-r>=strftime("%e/%b/%Y")<CR>
-imap <silent> <C-t><C-t> <C-r>=strftime("%l:%M:%p")<CR>
+inoremap <silent> <C-d><C-d> <C-r>=strftime("%e/%b/%Y")<CR>
+inoremap <silent> <C-t><C-t> <C-r>=strftime("%l:%M:%p")<CR>
 "}}}
 " Toggle `set list` {{{2
-nmap <leader>li :set list!<CR>
+nnoremap <leader>li :set list!<CR>
 " }}}
 " Toggle `set number` {{{2
-nmap <leader>nu :set number!<CR>
+nnoremap <leader>nu :set number!<CR>
 " }}}
 " Editing a new file in current directory {{{2
-map <leader>ew :e <C-r>=expand("%:p:h") . "/" <CR>
-map <leader>es :sp <C-r>=expand("%:p:h") . "/" <CR>
-map <leader>ev :vsp <C-r>=expand("%:p:h") . "/" <CR>
-map <leader>et :tabe <C-r>=expand("%:p:h") . "/" <CR>
+noremap <leader>ew :e <C-r>=expand("%:p:h") . "/" <CR>
+noremap <leader>es :sp <C-r>=expand("%:p:h") . "/" <CR>
+noremap <leader>ev :vsp <C-r>=expand("%:p:h") . "/" <CR>
+noremap <leader>et :tabe <C-r>=expand("%:p:h") . "/" <CR>
 " }}}
 " Digraph {{{2
-:nmap <leader>di :digraphs<CR>
+:nnoremap <leader>di :digraphs<CR>
 " }}}
 "}}}
 " Plugins {{{1
@@ -183,7 +183,7 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " }}}
 " gundo {{{2
 " Toggle undo tree
-nmap <leader>u :GundoToggle<CR>
+nnoremap <leader>u :GundoToggle<CR>
 " }}}
 " figitive {{{2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -201,28 +201,28 @@ if has("autocmd")
     autocmd FileType java setlocal omnifunc=javacomplete#Complete
 endif
 " smart imports
-nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
-imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
-nmap <F5> <Plug>(JavaComplete-Imports-Add)
-imap <F5> <Plug>(JavaComplete-Imports-Add)
-nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
-imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
-nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
-imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+nnoremap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+inoremap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+nnoremap <F5> <Plug>(JavaComplete-Imports-Add)
+inoremap <F5> <Plug>(JavaComplete-Imports-Add)
+nnoremap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+inoremap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+nnoremap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+inoremap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 " getters and setters
-" nmap <buffer> <leader>jA <Plug>(JavaComplete-Generate-Accessors)
-" nmap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
-" nmap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
-" nmap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
-" imap <buffer> <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
-" imap <buffer> <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
-" imap <buffer> <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" nnoremap <buffer> <leader>jA <Plug>(JavaComplete-Generate-Accessors)
+" nnoremap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+" nnoremap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+" nnoremap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" inoremap <buffer> <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
+" inoremap <buffer> <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
+" inoremap <buffer> <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 " }}}
 " vim-markdown {{{2
 let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', 'vim', 'bash=sh']
 " }}}
 " nerdtree {{{2
-nmap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 " }}}
 " ctrlp {{{2
 let g:ctrlp_map = '<C-p>'
