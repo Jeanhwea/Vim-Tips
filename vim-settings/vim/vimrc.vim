@@ -139,8 +139,8 @@ function! WinMove(key) "move to the window in the direction shown, or create a n
     endif
 endfunction
 " Window movement shortcuts
-nnoremap <C-h> :call WinMove('h')<cr>
-nnoremap <C-l> :call WinMove('l')<cr>
+" nnoremap <C-h> :call WinMove('h')<cr>
+" nnoremap <C-l> :call WinMove('l')<cr>
 " nnoremap <C-j> :call WinMove('j')<cr>
 " nnoremap <C-k> :call WinMove('k')<cr>
 " }}}
@@ -157,14 +157,14 @@ function! s:GrepOperator(type) " grep words in current directory {{{2
     copen
     let @@ = saved_unnamed_register
 endfunction
-nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<cr>g@
-vnoremap <leader>g :<c-u>call <SID>GrepOperator(visualmode())<cr>
+nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<CR>g@
+vnoremap <leader>g :<C-u>call <SID>GrepOperator(visualmode())<CR>
 " }}}
 "}}}
 " Shortcuts {{{1
 " Python command {{{2
-:nnoremap <leader>py <ESC>:w<CR>:! python % <CR>
-:nnoremap <leader>rpy <ESC>:w<CR>:r ! python % <CR>
+nnoremap <leader>py <ESC>:w<CR>:! python % <CR>
+nnoremap <leader>rpy <ESC>:w<CR>:r ! python % <CR>
 " }}}
 " Remove trails and blank lines {{{2
 nnoremap _$ :call Preserve("%s/\\s\\+$//e")<CR>
@@ -187,7 +187,7 @@ noremap <leader>ev :vsp <C-r>=expand("%:p:h") . "/" <CR>
 noremap <leader>et :tabe <C-r>=expand("%:p:h") . "/" <CR>
 " }}}
 " Digraph {{{2
-:nnoremap <leader>di :digraphs<CR>
+nnoremap <leader>di :digraphs<CR>
 " }}}
 "}}}
 " Plugins {{{1
