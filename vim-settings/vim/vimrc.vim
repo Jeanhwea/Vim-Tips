@@ -157,8 +157,8 @@ function! s:GrepOperator(type) " grep words in current directory {{{2
     copen
     let @@ = saved_unnamed_register
 endfunction
-nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<CR>g@
-vnoremap <leader>g :<C-u>call <SID>GrepOperator(visualmode())<CR>
+nnoremap <leader>f :set operatorfunc=<SID>GrepOperator<CR>g@
+vnoremap <leader>f :<C-u>call <SID>GrepOperator(visualmode())<CR>
 " }}}
 "}}}
 " Shortcuts {{{1
@@ -203,6 +203,14 @@ vnoremap <leader>= :Tabularize /
 "  }}}
 " figitive {{{2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gp :Gpush<CR>
+nnoremap <leader>gr :Gread<CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gw :Gwrite<CR>
 " }}}
 " utilsnips {{{2
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
