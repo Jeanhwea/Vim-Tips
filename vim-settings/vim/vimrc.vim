@@ -162,10 +162,6 @@ vnoremap <leader>g :<C-u>call <SID>GrepOperator(visualmode())<CR>
 " }}}
 "}}}
 " Shortcuts {{{1
-" Python command {{{2
-nnoremap <leader>py <ESC>:w<CR>:! python % <CR>
-nnoremap <leader>rpy <ESC>:w<CR>:r ! python % <CR>
-" }}}
 " Remove trails and blank lines {{{2
 nnoremap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 nnoremap _= :call Preserve("g/^\\s*$/d")<CR>
