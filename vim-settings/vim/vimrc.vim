@@ -197,6 +197,10 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " Toggle undo tree
 nnoremap <leader>u :GundoToggle<CR>
 " }}}
+" tabular {{{2
+nnoremap <leader>= :Tabularize /
+vnoremap <leader>= :Tabularize /
+"  }}}
 " figitive {{{2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " }}}
