@@ -285,7 +285,8 @@ let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'python'     : $HOME.'/.dict/python.dict',
     \ 'ruby'       : $HOME.'/.dict/ruby.dict',
     \ 'tex'        : $HOME.'/.dict/tex.dict',
-    \ 'vim'        : $HOME.'/.dict/vim.dict'
+    \ 'vim'        : $HOME.'/.dict/vim.dict',
+    \ 'viz'        : $HOME.'/.dict/viz.dict',
 \ }
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
