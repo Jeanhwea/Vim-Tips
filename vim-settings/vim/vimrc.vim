@@ -170,12 +170,6 @@ nnoremap _= :call Preserve("g/^\\s*$/d")<CR>
 inoremap <silent> <C-d><C-d> <C-r>=strftime("%e/%b/%Y")<CR>
 inoremap <silent> <C-t><C-t> <C-r>=strftime("%l:%M:%p")<CR>
 "}}}
-" Toggle `set list` {{{2
-nnoremap <leader>li :set list!<CR>
-" }}}
-" Toggle `set number` {{{2
-nnoremap <leader>nu :set number!<CR>
-" }}}
 " Editing a new file in current directory {{{2
 noremap <leader>ew :e <C-r>=expand("%:p:h") . "/" <CR>
 noremap <leader>es :sp <C-r>=expand("%:p:h") . "/" <CR>
@@ -196,6 +190,9 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " gundo {{{2
 " Toggle undo tree
 nnoremap <leader>u :GundoToggle<CR>
+" }}}
+" tagbar {{{2
+nnoremap <leader>t :TagbarToggle<CR>
 " }}}
 " tabular {{{2
 nnoremap <leader>= :Tabularize /
