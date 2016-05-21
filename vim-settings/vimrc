@@ -19,3 +19,4 @@ let g:mapleader="\<Space>"
 " source my own scripts
 source ~/.vim/abbreviations.vim
 source ~/.vim/vimrc.vim
+source ~/.vim/gvimrc.vim

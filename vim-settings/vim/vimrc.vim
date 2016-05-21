@@ -21,7 +21,7 @@ set history=1000
 set dictionary+=/usr/share/dict/words
 set backspace=indent,eol,start
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,trail:∙,eol:¬
 set modeline
 set ruler
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
@@ -37,24 +37,18 @@ set wildignore+=*.png,*.jpg,*.gif,*.xpm,*.tiff
 if has("autocmd")
     filetype plugin indent on
     " set tabstop softtabstop shiftwidth expandtab/noexpandtab
-    autocmd FileType make       setlocal ts=8 sts=8 sw=8 et
-    autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noet
-    autocmd FileType html       setlocal ts=2 sts=2 sw=2 noet
-    autocmd FileType css        setlocal ts=2 sts=2 sw=2 noet
+    autocmd FileType javascript,html,css setlocal ts=2 sts=2 sw=2 noet
+    autocmd FileType make setlocal ts=8 sts=8 sw=8 et
     " set cindent autoindent
-    autocmd FileType c          setlocal cin ai
-    autocmd FileType cpp        setlocal cin ai
-    autocmd FileType java       setlocal cin ai
+    autocmd FileType c,cpp,java setlocal cin ai
     " set listchars
-    autocmd FileType text       setlocal lcs=tab:▸\ ,eol:☠
-    autocmd FileType mkd        setlocal lcs=tab:▸\ ,eol:☠
-    autocmd FileType vim        setlocal lcs=tab:▸\ ,eol:☠
-    autocmd FileType java       setlocal lcs=tab:▸\ ,trail:♀,eol:☠
+    autocmd FileType text,mkd,vim setlocal lcs=tab:▸\ ,eol:☠
     " set dictionary
     " autocmd FileType java       setlocal dict+=~/.vim/dict/java.dict
     " set commentstring
-    autocmd FileType vim        setlocal cms=\"\ %s
-    autocmd FileType python     setlocal cms=\#\ %s
+    autocmd FileType python setlocal cms=\#\ %s
+    autocmd FileType vim setlocal cms=\"\ %s
+    autocmd FileType viz setlocal cms=\'\ %s
 endif
 "}}}
 " Colorscheme {{{1
@@ -104,6 +98,11 @@ function! SummarizeTabs()
     endtry
 endfunction
 command! -nargs=* Stab call Stab()
+" }}}
+function! GenCtags(type) " generate tags files {{{
+    if a:type ==# 'cpp'
+    endif
+endfunction
 " }}}
 function! ToggleSearchOption() " set hlsearch incsearch {{{2
     set hlsearch!
