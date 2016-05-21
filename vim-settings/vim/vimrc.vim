@@ -108,7 +108,7 @@ function! ToggleSearchOption() " set hlsearch incsearch {{{2
     set hlsearch!
     set incsearch!
 endfunction
-command! -nargs=* ToggleSearchOption call ToggleSearchOption()
+noremap <leader>ts :call ToggleSearchOption()<CR>
 " }}}
 function! QuickfixFilenames() " add a quickfixdo just like `argdo` `bufdo` and `windo` {{{2
     " Building a hash ensures we get each buffer only once
@@ -188,10 +188,10 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " }}}
 " gundo {{{2
 " Toggle undo tree
-nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>tu :GundoToggle<CR>
 " }}}
 " tagbar {{{2
-nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>tt :TagbarToggle<CR>
 " }}}
 " tabular {{{2
 nnoremap <leader>= :Tabularize /
@@ -242,7 +242,7 @@ inoremap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', 'vim', 'bash=sh']
 " }}}
 " nerdtree {{{2
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>te :NERDTreeToggle<CR>
 " }}}
 " ctrlp {{{2
 let g:ctrlp_map = '<C-p>'
@@ -353,5 +353,10 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+" }}}
+" signify {{{2
+let g:signify_disable_by_default = 1
+let g:signify_vcs_list = [ 'git' , 'hg' ]
+nnoremap <leader>tc :SignifyToggle<CR>
 " }}}
 "}}}
