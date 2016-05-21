@@ -13,8 +13,10 @@ set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vi
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc 
 "}}}
 " remap the leader key {{{1
-let mapleader="\<Space>"
-let g:mapleader="\<Space>"
+" let mapleader="\<Space>"
+" let g:mapleader="\<Space>"
+let mapleader=","
+let g:mapleader=","
 "}}}
 " source my own scripts
 source ~/.vim/abbreviations.vim
