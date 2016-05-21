@@ -1,2 +1,6 @@
+# Viz 3 Script highlight files
+**/vim-viz
+
+# Vim swap files
 *.swp
 *.swo
