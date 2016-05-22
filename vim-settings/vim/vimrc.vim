@@ -31,7 +31,11 @@ set virtualedit=block
 set wildmode=list:longest,full
 set wildignore+=*.o,*.obj,*~,*.class
 set wildignore+=*.png,*.jpg,*.gif,*.xpm,*.tiff
-" set relativenumber
+if has('unnamedplus')
+    set clipboard=unnamedplus
+else
+    set clipboard=unnamedplus
+endif
 "}}}
 " FileType related settings {{{1
 if has("autocmd")
@@ -126,6 +130,17 @@ function! ToggleSearchOption() " set hlsearch incsearch {{{2
     set incsearch!
 endfunction
 noremap <LocalLeader>ts :call ToggleSearchOption()<CR>
+" }}}
+function! ToggleNumberOption() " set hlsearch incsearch {{{2
+    if &relativenumber
+        set nonumber
+        set norelativenumber
+    else
+        set number
+        set relativenumber
+    endif
+endfunction
+noremap <LocalLeader>tn :call ToggleNumberOption()<CR>
 " }}}
 function! QuickfixFilenames() " add a quickfixdo just like `argdo` `bufdo` and `windo` {{{2
     " Building a hash ensures we get each buffer only once
