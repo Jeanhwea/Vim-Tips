@@ -7,5 +7,5 @@ function! PythonCompileAndRunFile()
     execute '!' . g:python_command . ' ' . bufname('%')
 endfunction
 
-nnoremap <buffer> <leader>r :call PythonCompileAndRunFile()<CR>
+nnoremap <buffer> <LocalLeader>r :call PythonCompileAndRunFile()<CR>
 

@@ -36,19 +36,25 @@ set wildignore+=*.png,*.jpg,*.gif,*.xpm,*.tiff
 " FileType related settings {{{1
 if has("autocmd")
     filetype plugin indent on
-    " set tabstop softtabstop shiftwidth expandtab/noexpandtab
-    autocmd FileType javascript,html,css setlocal ts=2 sts=2 sw=2 noet
-    autocmd FileType make setlocal ts=8 sts=8 sw=8 et
-    " set cindent autoindent
-    autocmd FileType c,cpp,java setlocal cin ai
-    " set listchars
-    autocmd FileType text,mkd,vim setlocal lcs=tab:▸\ ,eol:☠
-    " set dictionary
-    " autocmd FileType java       setlocal dict+=~/.vim/dict/java.dict
-    " set commentstring
-    autocmd FileType python setlocal cms=\#\ %s
-    autocmd FileType vim setlocal cms=\"\ %s
-    autocmd FileType viz setlocal cms=\'\ %s
+    augroup FTOptions " {{{2
+        autocmd!
+        " set tabstop softtabstop shiftwidth expandtab/noexpandtab
+        autocmd FileType javascript,html,css setlocal ts=2 sts=2 sw=2 et
+        autocmd FileType make setlocal ts=8 sts=8 sw=8 noet
+        autocmd FileType text,mkd setlocal ts=4 sts=4 sw=4 noet
+        " set cindent autoindent
+        autocmd FileType c,cpp,java setlocal cin ai
+        autocmd FileType python,vim,javascript,html,css setlocal nocin ai
+        autocmd FileType text,mkd setlocal nocin noai
+        " set list
+        autocmd FileType text,mkd setlocal nolist
+        " set commentstring
+        autocmd FileType c,cpp,java setlocal cms=\/\/\ %s
+        autocmd FileType python setlocal cms=\#\ %s
+        autocmd FileType vim setlocal cms=\"\ %s
+        autocmd FileType viz setlocal cms=\'\ %s
+    augroup END
+    " }}}
 endif
 "}}}
 " Colorscheme {{{1
@@ -99,6 +105,17 @@ function! SummarizeTabs()
 endfunction
 command! -nargs=* Stab call Stab()
 " }}}
+function! SwapTabAndSpace() " {{{2
+    if &expandtab 
+        set noexpandtab
+        :%retab!
+    else
+        set expandtab
+        :%retab!
+    endif
+endfunction
+command! -nargs=* SwapTabAndSpace call SwapTabAndSpace()<CR>
+" }}}
 function! GenCtags(type) " generate tags files {{{
     if a:type ==# 'cpp'
     endif
@@ -108,7 +125,7 @@ function! ToggleSearchOption() " set hlsearch incsearch {{{2
     set hlsearch!
     set incsearch!
 endfunction
-noremap <leader>ts :call ToggleSearchOption()<CR>
+noremap <LocalLeader>ts :call ToggleSearchOption()<CR>
 " }}}
 function! QuickfixFilenames() " add a quickfixdo just like `argdo` `bufdo` and `windo` {{{2
     " Building a hash ensures we get each buffer only once
@@ -156,8 +173,8 @@ function! s:GrepOperator(type) " grep words in current directory {{{2
     copen
     let @@ = saved_unnamed_register
 endfunction
-nnoremap <leader>f :set operatorfunc=<SID>GrepOperator<CR>g@
-vnoremap <leader>f :<C-u>call <SID>GrepOperator(visualmode())<CR>
+nnoremap <LocalLeader>f :set operatorfunc=<SID>GrepOperator<CR>g@
+vnoremap <LocalLeader>f :<C-u>call <SID>GrepOperator(visualmode())<CR>
 " }}}
 "}}}
 " Shortcuts {{{1
@@ -170,13 +187,13 @@ inoremap <silent> <C-d><C-d> <C-r>=strftime("%e/%b/%Y")<CR>
 inoremap <silent> <C-t><C-t> <C-r>=strftime("%l:%M:%p")<CR>
 "}}}
 " Editing a new file in current directory {{{2
-noremap <leader>ew :e <C-r>=expand("%:p:h") . "/" <CR>
-noremap <leader>es :sp <C-r>=expand("%:p:h") . "/" <CR>
-noremap <leader>ev :vsp <C-r>=expand("%:p:h") . "/" <CR>
-noremap <leader>et :tabe <C-r>=expand("%:p:h") . "/" <CR>
+noremap <LocalLeader>ew :e <C-r>=expand("%:p:h") . "/" <CR>
+noremap <LocalLeader>es :sp <C-r>=expand("%:p:h") . "/" <CR>
+noremap <LocalLeader>ev :vsp <C-r>=expand("%:p:h") . "/" <CR>
+noremap <LocalLeader>et :tabe <C-r>=expand("%:p:h") . "/" <CR>
 " }}}
 " Digraph {{{2
-nnoremap <leader>di :digraphs<CR>
+nnoremap <LocalLeader>di :digraphs<CR>
 " }}}
 "}}}
 " Plugins {{{1
@@ -188,25 +205,25 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " }}}
 " gundo {{{2
 " Toggle undo tree
-nnoremap <leader>tu :GundoToggle<CR>
+nnoremap <LocalLeader>tu :GundoToggle<CR>
 " }}}
 " tagbar {{{2
-nnoremap <leader>tt :TagbarToggle<CR>
+nnoremap <LocalLeader>tt :TagbarToggle<CR>
 " }}}
 " tabular {{{2
-nnoremap <leader>= :Tabularize /
-vnoremap <leader>= :Tabularize /
+nnoremap <LocalLeader>= :Tabularize /
+vnoremap <LocalLeader>= :Tabularize /
 "  }}}
 " figitive {{{2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gd :Gdiff<CR>
-nnoremap <leader>gl :Glog<CR>
-nnoremap <leader>gp :Gpush<CR>
-nnoremap <leader>gr :Gread<CR>
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gw :Gwrite<CR>
+nnoremap <LocalLeader>gb :Gblame<CR>
+nnoremap <LocalLeader>gc :Gcommit<CR>
+nnoremap <LocalLeader>gd :Gdiff<CR>
+nnoremap <LocalLeader>gl :Glog<CR>
+nnoremap <LocalLeader>gp :Gpush<CR>
+nnoremap <LocalLeader>gr :Gread<CR>
+nnoremap <LocalLeader>gs :Gstatus<CR>
+nnoremap <LocalLeader>gw :Gwrite<CR>
 " }}}
 " utilsnips {{{2
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -230,10 +247,10 @@ inoremap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 nnoremap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 inoremap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 " getters and setters
-" nnoremap <buffer> <leader>jA <Plug>(JavaComplete-Generate-Accessors)
-" nnoremap <buffer> <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
-" nnoremap <buffer> <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
-" nnoremap <buffer> <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" nnoremap <buffer> <LocalLeader>jA <Plug>(JavaComplete-Generate-Accessors)
+" nnoremap <buffer> <LocalLeader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+" nnoremap <buffer> <LocalLeader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+" nnoremap <buffer> <LocalLeader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 " inoremap <buffer> <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
 " inoremap <buffer> <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
 " inoremap <buffer> <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
@@ -242,7 +259,7 @@ inoremap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 let g:markdown_fenced_languages = ['java', 'html', 'javascript', 'css', 'cpp', 'vim', 'bash=sh']
 " }}}
 " nerdtree {{{2
-nnoremap <leader>te :NERDTreeToggle<CR>
+nnoremap <LocalLeader>te :NERDTreeToggle<CR>
 " }}}
 " ctrlp {{{2
 let g:ctrlp_map = '<C-p>'
@@ -270,9 +287,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-nnoremap <leader>st :SyntasticToggleMode<CR>
-nnoremap <leader>sc :SyntasticCheck<CR>
-nnoremap <leader>sr :SyntasticReset<CR>
+nnoremap <LocalLeader>st :SyntasticToggleMode<CR>
+nnoremap <LocalLeader>sc :SyntasticCheck<CR>
+nnoremap <LocalLeader>sr :SyntasticReset<CR>
 " }}}
 " neocomplete {{{2
 " Disable AutoComplPop.
@@ -357,7 +374,7 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " signify {{{2
 let g:signify_disable_by_default = 1
 let g:signify_vcs_list = [ 'git' , 'hg' ]
-nnoremap <leader>tc :SignifyToggle<CR>
+nnoremap <LocalLeader>tc :SignifyToggle<CR>
 " }}}
 " rainbow {{{2
 let g:rainbow_conf = {
@@ -382,6 +399,6 @@ let g:rainbow_conf = {
 \       'css': 0,
 \   }
 \}
-nnoremap <leader>tr :RainbowToggle<CR>
+nnoremap <LocalLeader>tr :RainbowToggle<CR>
 " }}}
 "}}}
