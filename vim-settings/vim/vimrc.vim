@@ -125,13 +125,13 @@ function! GenCtags(type) " generate tags files {{{
     endif
 endfunction
 " }}}
-function! ToggleSearchOption() " set hlsearch incsearch {{{2
+function! ToggleSearchOption() " toggle hlsearch incsearch {{{2
     set hlsearch!
     set incsearch!
 endfunction
 noremap <LocalLeader>ts :call ToggleSearchOption()<CR>
 " }}}
-function! ToggleNumberOption() " set hlsearch incsearch {{{2
+function! ToggleNumberOption() " toggle number relativenumber {{{2
     if &relativenumber
         set nonumber
         set norelativenumber
