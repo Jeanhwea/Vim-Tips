@@ -64,7 +64,7 @@ set cindent
 
 ### 添加脚本
 为了方便空格和<Tab>之间的转化，可以添加下面和帮助函数。
-```
+```viml
 function! SwapTabAndSpace() " {{{2¬
     if &expandtab∙¬
         set noexpandtab¬
