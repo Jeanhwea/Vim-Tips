@@ -234,6 +234,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 nnoremap <LocalLeader>gb :Gblame<CR>
 nnoremap <LocalLeader>gc :Gcommit<CR>
 nnoremap <LocalLeader>gd :Gdiff<CR>
+nnoremap <LocalLeader>ge :Gbrowse<CR>
 nnoremap <LocalLeader>gl :Glog<CR>
 nnoremap <LocalLeader>gp :Gpush<CR>
 nnoremap <LocalLeader>gr :Gread<CR>
