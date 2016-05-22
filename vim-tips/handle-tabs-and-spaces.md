@@ -62,4 +62,18 @@ set cindent
 :g/^$/d
 ```
 
+### 添加脚本
+为了方便空格和<Tab>之间的转化，可以添加下面和帮助函数。
+```
+function! SwapTabAndSpace() " {{{2¬
+    if &expandtab∙¬
+        set noexpandtab¬
+        :%retab!¬
+    else¬
+        set expandtab¬
+        :%retab!¬
+    endif¬
+endfunction¬
+command! -nargs=* SwapTabAndSpace call SwapTabAndSpace()<CR>¬
+```
 
