@@ -21,7 +21,11 @@ set history=1000
 set dictionary+=/usr/share/dict/words
 set backspace=indent,eol,start
 set list
-set listchars=tab:▸\ ,trail:∙,eol:¬
+if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8') && version >= 700
+    let &listchars = "tab:\u25b8\u0020,trail:\u2423,eol:\u00ac"
+else
+    set listchars=tab:>\ ,trail:-,extends:>,precedes:<
+endif
 set modeline
 set ruler
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
