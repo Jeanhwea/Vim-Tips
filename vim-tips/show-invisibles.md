@@ -25,4 +25,9 @@ set listchars=tab:▸\ ,eol:☠
 这样的话，只需要按`\l`就可以切换显示或者隐藏不可见字符。同时<Tab>会被映射成`▸`,换行会被映射成`☠`
 
 
+Textmate 风格隐藏字符
+------------------
 
+```viml
+set listchars=tab:▸ ,trail:␣,eol:¬
+```
