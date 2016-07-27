@@ -1,5 +1,5 @@
-tipsDir='vim-tips'
-githubUrl='https://github.com/Jeanhwea/Vim-Tips/blob/master/vim-tips/'
+tipsDir='contents'
+githubUrl='https://github.com/Jeanhwea/Vim-Tips/blob/master/contents/'
 
 # inject header
 cat README.header > README.md
