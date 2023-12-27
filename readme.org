@@ -4,6 +4,12 @@
 #+DATE: <2023-12-27 Wed>
 #+STARTUP: overview num indent
 
+#+BEGIN_QUOTE
+如果觉得讲解得好，请喝一杯咖啡也是极好的
+#+END_QUOTE
+
+[[file:img/pay.jpg]]
+
 
 * 第一季：vim 原生操作
 1. [[file:s1/e01.org][vim 介绍、七个习惯]] | [[https://www.bilibili.com/video/BV1YN4y147DX][视频 01]]
