@@ -1,4 +1,4 @@
-#+TITLE: Vim 编辑器视频
+#+TITLE: Vim 编辑器
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2023-12-27 Wed>
