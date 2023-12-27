@@ -30,8 +30,16 @@ VIM = VI IMproved
 * 帮助系统
 1. 内置帮助文档 ~:h help~
    - 跳转 ~ctrl+]~
-   - 返回 ~ctrl+t~
+   - 返回之前(old) ~ctrl+o~
+   - 返回(tag) ~ctrl+t~
    - 查看跳转栈 ~:tags~
 2. 无配置启动 ~vim -u NONE~
 3. 外置帮助系统 ~K~
 4. 内置教程 ~vimtutor~
+
+其他实例
+1. 查看 visual mode 的命令
+   - v_ 开头 ~:h v_:~
+   - 普通模式 ~:h :~
+2. 查看带修饰键的命令
+   - ~:h CTRL-W~
