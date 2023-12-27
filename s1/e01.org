@@ -32,4 +32,4 @@ Vim 的创造者、维护者和终身领导者 Bram Moolenaar 于 2023 年 8 月
 
 * 七个习惯 by Bram
 1. 7 habits https://www.moolenaar.net/habits.html
-2. Local [[file:..xref/7-habits-by-bram.org]]
+2. Local [[file:../xref/7-habits-by-bram.org]]
