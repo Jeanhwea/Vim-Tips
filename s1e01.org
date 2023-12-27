@@ -1,0 +1,35 @@
+#+TITLE: Vim - 第一季 - 高端的食材往往只需要简单的烹饪
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2023-12-24 Sun>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* 动机
+#+BEGIN_EXAMPLE
+  :wq
+#+END_EXAMPLE
+
+Vim 的创造者、维护者和终身领导者 Bram Moolenaar 于 2023 年 8 月 3 日因病去世
+1. vim 的操作已经被广大程序员熟知
+2. 目前抽空做一下 vim 功能使用的说明
+
+* 目标
+1. vim 使用者可以分成两类
+   - raw 无配置/少配置
+   - plugin 配合插件扩展原有功能
+     - tpope
+2. 高端的食材往往只需要简单的烹饪
+   - 99 % 的 vim 原生操作可以支撑日常使用
+   - 原生操作更容易和其它工具共生
+     1) emacs evil-mode
+     2) jetbrain 插件 IdeaVim
+     3) vscode Vim 插件
+3. 免责声明
+   - 预计安排多季；目前是第一季，主要介绍原生操作
+   - 更新缓慢
+
+* 七个习惯 by Bram
+1. 7 habits https://www.moolenaar.net/habits.html
+2. Local [[file:xref/7-habits-by-bram.org]]
