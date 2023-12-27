@@ -38,8 +38,10 @@ VIM = VI IMproved
 4. 内置教程 ~vimtutor~
 
 其他实例
-1. 查看 visual mode 的命令
+1. 查看帮助系统手册
+   - ~:h usr~
+2. 查看 visual mode 的命令
    - v_ 开头 ~:h v_:~
    - 普通模式 ~:h :~
-2. 查看带修饰键的命令
+3. 查看带修饰键的命令
    - ~:h CTRL-W~
