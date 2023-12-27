@@ -1,0 +1,17 @@
+#+TITLE: Vim 发展及其帮助系统
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2023-12-27 Wed>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* Vim 近期发展
+1. 参考演示文稿
+2. version 9 的近期特性 ~:h version-9~
+
+* 帮助系统
+1. 内置帮助文档 ~:h help~
+2. 无配置启动 ~vim -u NONE~
+3. 外置帮助系统 ~K~
+4. 内置教程 ~vimtutor~
