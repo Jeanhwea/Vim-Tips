@@ -12,6 +12,20 @@
 
 * vi / vim
 VIM = VI IMproved
+#+BEGIN_EXAMPLE
+  :h cp
+  set nocp
+#+END_EXAMPLE
+
+* 编译安装
+1. centos 7 => vim7
+2. ubuntu 22.04 => vim8
+#+BEGIN_SRC sh
+  git clone https://github.com/vim/vim.git
+  ./configure --prefix=/opt/vim
+  make -j$(nproc)
+  sudo make install
+#+END_SRC
 
 * 帮助系统
 1. 内置帮助文档 ~:h help~
