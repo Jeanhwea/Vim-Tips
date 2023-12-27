@@ -43,6 +43,6 @@ VIM = VI IMproved
 2. 查看 visual mode 的命令
    - v_ 开头 ~:h v_:~
    - 普通模式 ~:h :~
-3. 查看选项 ~:h :nu~
+3. 查看选项 ~:h 'nocp'~
 4. 查看带修饰键的命令
    - ~:h CTRL-W~
