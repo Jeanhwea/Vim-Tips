@@ -10,6 +10,9 @@
 1. 参考演示文稿
 2. version 9 的近期特性 ~:h version-9~
 
+* vi / vim
+VIM = VI IMproved
+
 * 帮助系统
 1. 内置帮助文档 ~:h help~
 2. 无配置启动 ~vim -u NONE~
