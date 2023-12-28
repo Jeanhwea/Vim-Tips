@@ -27,6 +27,7 @@ VIM = VI IMproved
   sudo make install
 #+END_SRC
 
+vim 文档所在路径
 #+BEGIN_SRC sh :results output
   ls /opt/vim/share/vim/vim90/doc/
 #+END_SRC
