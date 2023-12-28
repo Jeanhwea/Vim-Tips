@@ -22,3 +22,7 @@
 * 第一季：vim 原生操作
 1. [[file:s1/e01.org][vim 介绍、七个习惯]] | [[https://www.bilibili.com/video/BV1YN4y147DX][视频 01]]
 2. [[file:s1/e02.org][Vim 发展及其帮助系统]] | [[https://www.bilibili.com/video/BV1va4y167jA/][视频 02]]
+
+
+* 链接
+1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
