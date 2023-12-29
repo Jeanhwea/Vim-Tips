@@ -21,6 +21,11 @@
 6. ~:x~ 同:wq
 7. ~:q!~ 强制退出 不保存并退出
 
+write
+quit
+! = force
+:x => eXit
+
 ** 移动光标
 #+BEGIN_EXAMPLE
          ^
@@ -31,6 +36,11 @@
 #+END_EXAMPLE
 
 ** 删除和追加
+- <ESC> NORMAL
+- i => Insert
+- : => EX
+- v => visual mode
+
 1. ~x~ 删除光标处的一个字符
 2. ~a~ 追加文本
 3. ~i~ 插入文本
@@ -46,6 +56,13 @@
 7. ~G~ 到文本最后一行首
 8. ~gg~ 到文本首行。
 
+#+BEGIN_EXAMPLE
+ w => word
+ b => back
+ e => end
+ $ => line $
+#+END_EXAMPLE
+
 ** 删除操作
 1. ~d~ 删除
 2. ~dd~ 删除一行
@@ -58,14 +75,20 @@ op [num] motion
 - 4dd
 
 ** 恢复命令
-1. ~u~ 恢复之前的动作
-2. ~U~ 恢复对一行的所有改变
-3. ~CTRL+R~ 反恢复
+1. ~u~ 恢复之前的动作 undo
+2. ~U~ 恢复对一行的所有改变 undo line-wise
+3. ~CTRL+R~ 反恢复 redo
 
 * 第三章：修改替换
 1. ~p~ 以在光标处粘贴先前删除的文本
 2. ~r~ 替换
 3. ~c~ 修改，功能等于删除单词并定位到插入模式
+
+#+BEGIN_EXAMPLE
+   c => change
+   p => put
+   r => replace
+#+END_EXAMPLE
 
 * 第四课：查找替换
 ** 光标定位和文件状态
