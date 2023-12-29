@@ -1,0 +1,9 @@
+#+TITLE: VimGolf 打磨你的操作技巧
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2023-12-29 Fri>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* starting here
