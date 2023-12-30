@@ -58,7 +58,7 @@ quit
 
 #+BEGIN_EXAMPLE
  w => word
- b => back
+ b => begin
  e => end
  $ => line $
 #+END_EXAMPLE
