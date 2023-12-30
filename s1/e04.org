@@ -6,10 +6,18 @@
 #+OPTIONS: ^:nil
 
 
-* 盲打和键盘
-1. 盲打是提升 vim 使用体验的基本操作
-   - A a 的不同
-   - $
-2. CapsLock 改建
+* 盲打
+1. 盲打是提升 vim 使用体验
+2. vim 的操作区分大小写
+   - 例如：A a 的不同
+3. vim 提倡精确操作
+   - 例如：i a 是对光标的精确定位
+   - 例如：f F 操作
+
+* 键盘
+1. CapsLock 改键
    - Ctrl
    - Esc
+2. 选择合适的键盘
+
+[[file:../img/hhkb.jpg]]
