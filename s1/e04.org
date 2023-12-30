@@ -6,4 +6,10 @@
 #+OPTIONS: ^:nil
 
 
-* starting here
+* 盲打和键盘
+1. 盲打是提升 vim 使用体验的基本操作
+   - A a 的不同
+   - $
+2. CapsLock 改建
+   - Ctrl
+   - Esc
