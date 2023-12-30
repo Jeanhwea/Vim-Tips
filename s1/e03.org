@@ -67,7 +67,7 @@ quit
 1. ~d~ 删除
 2. ~dd~ 删除一行
 
-** 组合命令 opertor/motion
+** 组合命令 operator/motion
 #+BEGIN_EXAMPLE
 op [num] motion
 #+END_EXAMPLE
