@@ -25,6 +25,14 @@ end file
   [2, 8], [11, 12]
 #+END_EXAMPLE
 
+[12, 11]
+1. 宏 macro
+2. 查找 [ => ~/[~
+3. 查找 ,    ~lt,~
+4. xwP
+5. lvt]
+6. xF,P
+
 * 盲打
 1. 盲打是提升 vim 使用体验重要途径
 2. vim 的操作区分大小写
@@ -35,7 +43,7 @@ end file
 
 * 键盘
 1. CapsLock 改键
-   - Ctrl
+   - Ctrl: ctrl-w v
    - Esc
 2. 选择合适的键盘
 ** hhkb
