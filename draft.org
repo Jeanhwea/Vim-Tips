@@ -1,0 +1,10 @@
+#+TITLE: DRAFT
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-01-01 Mon>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* g 命令
+1 gf
