@@ -8,11 +8,21 @@
 
 * vimgolf
 1. [[https://www.vimgolf.com/challenges/5fa95fbdd285680008e41e4b][swap number pairs]]
+
+start file
 #+BEGIN_EXAMPLE
   [2, 1], [5, 4]
   [6, 3]
   [7, 4]
   [8, 2], [12, 11]
+#+END_EXAMPLE
+
+end file
+#+BEGIN_EXAMPLE
+  [1, 2], [4, 5]
+  [3, 6]
+  [4, 7]
+  [2, 8], [11, 12]
 #+END_EXAMPLE
 
 
