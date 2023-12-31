@@ -6,8 +6,18 @@
 #+OPTIONS: ^:nil
 
 
+* vimgolf
+1. [[https://www.vimgolf.com/challenges/5fa95fbdd285680008e41e4b][swap number pairs]]
+#+BEGIN_EXAMPLE
+  [2, 1], [5, 4]
+  [6, 3]
+  [7, 4]
+  [8, 2], [12, 11]
+#+END_EXAMPLE
+
+
 * 盲打
-1. 盲打是提升 vim 使用体验
+1. 盲打是提升 vim 使用体验重要途径
 2. vim 的操作区分大小写
    - 例如：A a 的不同
 3. vim 提倡精确操作
@@ -19,5 +29,8 @@
    - Ctrl
    - Esc
 2. 选择合适的键盘
-
+** hhkb
 [[file:../img/hhkb.jpg]]
+
+** cherry
+[[file:../img/cherry.jpeg]]
