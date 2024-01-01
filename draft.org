@@ -22,3 +22,19 @@ s => delete and enter insert mode
    - ~%~ current file
    - ~%:h~ current director
 3. ~h expand~
+
+* vimrc
+#+BEGIN_EXAMPLE
+  source $VIMRUNTIME/defaults.vim
+
+  " set line number
+  " set number
+
+  " map space for ctrl-d page down.
+  nmap <Space> <C-D>
+
+  " edit
+  let mapleader = ","
+  nmap <Leader>ew :e %:h<Enter>
+  nmap <Leader>ee :e #<Enter>
+#+END_EXAMPLE
