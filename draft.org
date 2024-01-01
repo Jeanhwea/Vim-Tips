@@ -14,3 +14,11 @@ s => delete and enter insert mode
 
 * 寄存器
 1. ~:h registers~
+
+* 文件管理
+1. ~e .~ 当前目录
+2. ~e %~ 编辑文件
+   - ~#~ alternate file
+   - ~%~ current file
+   - ~%:h~ current director
+3. ~h expand~
