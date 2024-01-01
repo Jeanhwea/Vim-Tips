@@ -3,6 +3,11 @@ if filereadable(expand("$VIMRUNTIME/defaults.vim"))
   source $VIMRUNTIME/defaults.vim
 endif
 
+" set gui font size
+if has('gui_running')
+  set guifont=Menlo:h30
+endif
+
 " set line number
 " set number
 
