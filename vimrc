@@ -1,5 +1,7 @@
-" source default config first
-source $VIMRUNTIME/defaults.vim
+" load defaults config
+if filereadable(expand("$VIMRUNTIME/defaults.vim"))
+  source $VIMRUNTIME/defaults.vim
+endif
 
 " set line number
 " set number
