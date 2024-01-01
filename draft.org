@@ -6,6 +6,9 @@
 #+OPTIONS: ^:nil
 
 
+* . repeat
+s => delete and enter insert mode
+
 * g 命令
 1. ~gf~
 
