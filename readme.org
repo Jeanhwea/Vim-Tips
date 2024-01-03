@@ -23,6 +23,7 @@
 2. [[file:s1/e02.org][Vim 发展及其帮助系统]] | [[https://www.bilibili.com/video/BV1va4y167jA/][视频 02]]
 3. [[file:s1/e03.org][vimtutor 重温 Vim 的基础操作]] | [[https://www.bilibili.com/video/BV1gG411r71o/][视频 03]]
 4. [[file:s1/e04.org][VimGolf 打磨你的操作技巧]] | [[https://www.bilibili.com/video/BV1Dw411g7ny/][视频 04]]
+5. [[file:s1/e05.org][Vim 9.1 发布及 vim 编译安装]] | [[https://www.bilibili.com/video/BV1iK411s7ud/][视频 05]]
 
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
