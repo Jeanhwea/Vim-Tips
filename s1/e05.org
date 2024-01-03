@@ -1,0 +1,12 @@
+#+TITLE: Vim 9.1 发布及 vim 编译安装
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-01-03 Wed>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* vim 9.1
+1. Release note [[https://www.vim.org/vim-9.1-released.php][link]]
+
+[[file:../img/vim91.jpg]]
