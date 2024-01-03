@@ -10,3 +10,11 @@
 1. Release note [[https://www.vim.org/vim-9.1-released.php][link]]
 
 [[file:../img/vim91.jpg]]
+
+* 编译安装
+#+BEGIN_SRC sh
+  git clone https://github.com/vim/vim.git
+  ./configure --prefix=/opt/vim
+  make -j$(nproc)
+  sudo make install
+#+END_SRC
