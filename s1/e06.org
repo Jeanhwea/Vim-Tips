@@ -6,9 +6,6 @@
 #+OPTIONS: ^:nil
 
 
-* Text Object
-- ~:h text-object~
-
 * vimgolf
 1. Paste a column after a column [[https://www.vimgolf.com/challenges/9v0063d76854000000000249][link]]
 
@@ -34,3 +31,6 @@ End
   Peter Norvig,60
   Satoshi Nakamoto,45
 #+END_EXAMPLE
+
+* Text Object
+- ~:h text-object~
