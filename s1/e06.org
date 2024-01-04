@@ -1,4 +1,4 @@
-#+TITLE: VimGolf - Paste a column after a column
+#+TITLE: Text Object
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-01-04 Thu>
@@ -6,8 +6,11 @@
 #+OPTIONS: ^:nil
 
 
-* Game
-1. [[https://www.vimgolf.com/challenges/9v0063d76854000000000249][link]]
+* textobject
+- ~:h text-object~
+
+* vimgolf
+1. Paste a column after a column [[https://www.vimgolf.com/challenges/9v0063d76854000000000249][link]]
 
 Start
 #+BEGIN_EXAMPLE
