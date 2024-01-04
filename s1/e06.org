@@ -1,0 +1,33 @@
+#+TITLE: VimGolf - Paste a column after a column
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-01-04 Thu>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* Game
+1. [[https://www.vimgolf.com/challenges/9v0063d76854000000000249][link]]
+
+Start
+#+BEGIN_EXAMPLE
+  Names
+  Donald Knuth
+  Sebastian Thrun
+  Peter Norvig
+  Satoshi Nakamoto
+  Age
+  100
+  50
+  60
+  45
+#+END_EXAMPLE
+
+End
+#+BEGIN_EXAMPLE
+  Names,Age
+  Donald Knuth,100
+  Sebastian Thrun,50
+  Peter Norvig,60
+  Satoshi Nakamoto,45
+#+END_EXAMPLE
