@@ -6,7 +6,7 @@
 #+OPTIONS: ^:nil
 
 
-* textobject
+* Text Object
 - ~:h text-object~
 
 * vimgolf
