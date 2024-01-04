@@ -38,5 +38,35 @@ End
   Satoshi Nakamoto,45
 #+END_EXAMPLE
 
+macro
+1. qq
+2. 5j
+3. yiw => yiw
+4. 5k
+5. A,<esc>p
+6. j
+7. q
+8. 4@q
+
 * Text Object
 - ~:h text-object~
+
+- text object
+  - aw
+  - iw
+  - ap as
+  - is ip
+  - a[
+  - i[
+  - a" a'
+  - i" a'
+
+operator y v d
+motion
+text-object
+word WORD
+
+yiW
+text-object
+yiw
+object
