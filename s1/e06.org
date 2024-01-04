@@ -6,6 +6,12 @@
 #+OPTIONS: ^:nil
 
 
+* paste
+#+BEGIN_SRC sh
+  paste a b
+  paste -d, a b
+#+END_SRC
+
 * vimgolf
 1. Paste a column after a column [[https://www.vimgolf.com/challenges/9v0063d76854000000000249][link]]
 
