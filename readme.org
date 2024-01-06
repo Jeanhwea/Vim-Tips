@@ -25,7 +25,7 @@
 4. [[file:s1/e04.org][VimGolf 打磨你的操作技巧]] | [[https://www.bilibili.com/video/BV1Dw411g7ny/][视频 04]]
 5. [[file:s1/e05.org][Vim 9.1 发布及 vim 编译安装]] | [[https://www.bilibili.com/video/BV1iK411s7ud/][视频 05]]
 6. [[file:s1/e06.org][Text Object]] | [[https://www.bilibili.com/video/BV1ba4y127Kh/][视频 06]]
-7. [[file:s1/e07.org][救你于水深火热的一些 vim 概念]]
+7. [[file:s1/e07.org][救你于水深火热的一些 vim 操作]] | [[https://www.bilibili.com/video/BV1St4y1d74u/][视频 07]]
 
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
