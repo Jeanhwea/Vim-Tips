@@ -5,6 +5,11 @@
 #+STARTUP: overview num indent
 
 
+* quit
+#+BEGIN_EXAMPLE
+  :q!
+#+END_EXAMPLE
+
 * swap
 - ~:h swap-file~
 
