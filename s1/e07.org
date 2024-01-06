@@ -20,3 +20,4 @@
 - ~Ctrl-g~
 
 * view
+- ~:h view~
