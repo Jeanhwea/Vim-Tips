@@ -8,6 +8,7 @@
 * quit
 #+BEGIN_EXAMPLE
   :q!
+  :wq!
 #+END_EXAMPLE
 
 * swap
