@@ -1,4 +1,4 @@
-#+TITLE: 救你与水深火热的一些 vim 概念
+#+TITLE: 救你于水深火热的一些 vim 操作
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-01-05 Fri>
