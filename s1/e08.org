@@ -17,3 +17,12 @@
 由于放射性的镭处于衰变和没有衰变两种状态的叠加，
 猫就理应处于死猫和活猫的叠加状态。
 这只既死又活的猫就是所谓的“薛定谔猫”。
+
+* cat
+#+BEGIN_EXAMPLE
+  :w !sudo tee % > /dev/null
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+  :w !sudo cat > %
+#+END_EXAMPLE
