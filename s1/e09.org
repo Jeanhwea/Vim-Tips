@@ -1,0 +1,9 @@
+#+TITLE: QuickRef(1)
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-01-10 Wed>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+* 快速查找
+- ~:h quickref~
