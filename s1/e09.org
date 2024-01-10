@@ -1,4 +1,4 @@
-#+TITLE: QuickRef(1)
+#+TITLE: QuickRef
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-01-10 Wed>
@@ -8,4 +8,3 @@
 * 快速查找
 - ~:h quickref~
 - quick reference
-

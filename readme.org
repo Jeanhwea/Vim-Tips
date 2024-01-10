@@ -27,7 +27,7 @@
 6. [[file:s1/e06.org][Text Object]] | [[https://www.bilibili.com/video/BV1ba4y127Kh/][视频 06]]
 7. [[file:s1/e07.org][救你于水深火热的一些 vim概念]] | [[https://www.bilibili.com/video/BV1St4y1d74u/][视频 07]]
 8. [[file:s1/e08.org][薛定谔的 cat]] | [[https://www.bilibili.com/video/BV1Rc411t7z3/][视频 08]]
-9. [[file:s1/e09.org][QuickRef(1)]]
+9. [[file:s1/e09.org][QuickRef]]
 
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
