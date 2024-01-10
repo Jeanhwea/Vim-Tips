@@ -7,3 +7,5 @@
 
 * 快速查找
 - ~:h quickref~
+- quick reference
+
