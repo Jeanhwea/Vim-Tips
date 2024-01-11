@@ -9,3 +9,7 @@
 * 快速查找
 - ~:h quickref~
 - quick reference
+
+* 查看选项
+- ~:echo &textwidth~
+- ~so %~
