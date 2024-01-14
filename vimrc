@@ -5,7 +5,7 @@ endif
 
 " set gui font size
 if has('gui_running')
-  set guifont=Menlo:h30
+  set guifont=Menlo:h40
 endif
 
 " set line number
@@ -21,3 +21,6 @@ nmap <Leader>ew :e %:h
 nmap <Leader>ee :e #
 
 colorscheme desert
+
+" allow swith unsaved file
+set hidden
