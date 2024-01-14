@@ -19,3 +19,5 @@ let mapleader = ","
 "nmap <Leader>ew :e %:h<Enter>
 nmap <Leader>ew :e %:h
 nmap <Leader>ee :e #
+
+colorscheme desert
