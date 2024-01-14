@@ -30,5 +30,6 @@
 9. [[file:s1/e09.org][QuickRef]]
    - 左侧 [[https://www.bilibili.com/video/BV1ic411t7RY/][视频 09]] | [[https://www.bilibili.com/video/BV1pi4y1B7MN/][视频 10]] | [[https://www.bilibili.com/video/BV1C5411i7xC/][视频 11]] | [[https://www.bilibili.com/video/BV1PK411i7DB/][视频 12]]
    - 右侧 [[https://www.bilibili.com/video/BV1sQ4y157Fp/][视频 13]] | [[https://www.bilibili.com/video/BV1he411H7L6/][视频 14]]
+
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
