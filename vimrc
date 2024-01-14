@@ -5,6 +5,7 @@ endif
 
 " set gui font size
 if has('gui_running')
+  colorscheme desert
   set guifont=Menlo:h40
 endif
 
@@ -20,7 +21,6 @@ let mapleader = ","
 nmap <Leader>ew :e %:h
 nmap <Leader>ee :e #
 
-colorscheme desert
 
 " allow swith unsaved file
 set hidden
