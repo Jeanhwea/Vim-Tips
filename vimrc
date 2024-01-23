@@ -5,7 +5,7 @@ endif
 
 " set gui font size
 if has('gui_running')
-  colorscheme desert
+  colorscheme slate
   set guifont=Menlo:h40
 endif
 
