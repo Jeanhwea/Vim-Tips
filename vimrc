@@ -9,6 +9,7 @@ if has('gui_running')
   set guifont=Menlo:h40
 endif
 
+
 " set line number
 " set number
 
@@ -24,3 +25,5 @@ nmap <Leader>ee :e #
 
 " allow swith unsaved file
 set hidden
+
+" autocmd VimEnter * redraw!
