@@ -33,8 +33,7 @@ nmap <Space> <C-D>
 let mapleader = ","
 "nmap <Leader>ew :e %:h<Enter>
 nmap <Leader>ew :e <C-r>=expand('%:h')<CR><CR>
-" CTRL-G
-nmap <Leader>ee :e <C-r>=expand('#')
+nmap <Leader>ee :e <C-r>=expand('#')<CR><CR>
 nmap <Leader>ev :vsplit<CR>
 nmap <Leader>eh :split<CR>
 nmap <Leader>ww <C-W>o
