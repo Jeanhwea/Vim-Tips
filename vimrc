@@ -10,6 +10,9 @@ if filereadable(expand("$VIMRUNTIME/defaults.vim"))
   source $VIMRUNTIME/defaults.vim
 endif
 
+" Section: GUI
+autocmd GUIEnter * set guioptions-=r guioptions-=L
+
 " Section: indent, tab, space
 setglobal shiftround
 setglobal smarttab
