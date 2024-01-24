@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p bundle/start
 cd bundle/start
 
 git clone https://github.com/tpope/vim-pathogen.git   pathogen
