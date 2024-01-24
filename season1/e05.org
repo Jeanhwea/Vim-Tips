@@ -9,7 +9,7 @@
 * vim 9.1
 1. Release note [[https://www.vim.org/vim-9.1-released.php][link]]
 
-[[file:../img/vim91.jpg]]
+[[file:../images/vim91.jpg]]
 
 * 编译安装
 #+BEGIN_SRC sh

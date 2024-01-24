@@ -47,7 +47,7 @@ end file
    - Esc
 2. 选择合适的键盘
 ** hhkb
-[[file:../img/hhkb.jpg]]
+[[file:../images/hhkb.jpg]]
 
 ** cherry
-[[file:../img/cherry.jpeg]]
+[[file:../images/cherry.jpeg]]
