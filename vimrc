@@ -23,8 +23,6 @@ setglobal expandtab
 setglobal autoindent
 setglobal cindent 
 setglobal hidden
-
-" setglobal line number
 " setglobal number
 
 " Section: move arround quickly
