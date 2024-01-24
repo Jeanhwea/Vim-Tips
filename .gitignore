@@ -4,3 +4,6 @@
 # Vim swap files
 *.swp
 *.swo
+
+.netrwhist
+*.log
