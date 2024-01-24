@@ -11,3 +11,5 @@ if has('gui_running')
   "colorscheme blue
   colorscheme shine
 endif
+
+" vim:set et sw=2 foldmethod=expr
