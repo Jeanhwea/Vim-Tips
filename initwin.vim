@@ -3,8 +3,10 @@ if exists("g:win")
 endif
 let g:win=1
 
+let $LANG='en'
+set langmenu=en
+
 if has('gui_running') 
-  set langmenu=en
   set guifont=Consolas:h14
   colorscheme blue
 endif

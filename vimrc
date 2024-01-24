@@ -5,7 +5,6 @@ elseif has("mac")
   source $HOME/.vim/initmac.vim
 endif
 
-
 " load defaults config
 if filereadable(expand("$VIMRUNTIME/defaults.vim"))
   source $VIMRUNTIME/defaults.vim
