@@ -13,7 +13,7 @@ endif
 " Section: GUI setup
 autocmd GUIEnter * set guioptions-=r guioptions-=L
 
-" Section: indent, tab, space
+" Section: Edit: indent, tab, space
 setglobal shiftround
 setglobal smarttab
 setglobal tabstop=8
@@ -22,9 +22,10 @@ setglobal shiftwidth=8
 setglobal expandtab
 setglobal autoindent
 setglobal cindent 
+setglobal hidden
 
-" set line number
-" set number
+" setglobal line number
+" setglobal number
 
 " Section: move arround quickly
 " map space for ctrl-d page down.
@@ -37,10 +38,5 @@ nmap <Leader>ee :e <C-r>=expand('#')<CR><CR>
 nmap <Leader>ev :vsplit<CR>
 nmap <Leader>eh :split<CR>
 nmap <Leader>ww <C-W>o
-
-" allow switch unsaved file
-set hidden
-
-" autocmd VimEnter * redraw!
 
 " vim:set et sw=2 foldmethod=expr
