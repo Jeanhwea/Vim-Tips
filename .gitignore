@@ -7,3 +7,7 @@
 
 .netrwhist
 *.log
+
+# vim bundle folder
+bundle/*
+pack/*

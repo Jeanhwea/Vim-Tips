@@ -5,6 +5,7 @@ elseif has("mac")
   source $HOME/.vim/init/mac.vim
 endif
 
+
 " Section: load defaults config
 if filereadable(expand("$VIMRUNTIME/defaults.vim"))
   source $VIMRUNTIME/defaults.vim
@@ -36,5 +37,6 @@ nmap <Leader>ee :e <C-r>=expand('#')<CR><CR>
 nmap <Leader>ev :vsplit<CR>
 nmap <Leader>eh :split<CR>
 nmap <Leader>ww <C-W>o
+
 
 " vim:set et sw=2 foldmethod=expr
