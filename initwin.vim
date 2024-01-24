@@ -8,5 +8,6 @@ set langmenu=en
 
 if has('gui_running') 
   set guifont=Consolas:h14
-  colorscheme blue
+  "colorscheme blue
+  colorscheme shine
 endif
