@@ -10,15 +10,15 @@ if filereadable(expand("$VIMRUNTIME/defaults.vim"))
   source $VIMRUNTIME/defaults.vim
 endif
 
-" Section: GUI
+" Section: GUI setup
 autocmd GUIEnter * set guioptions-=r guioptions-=L
 
 " Section: indent, tab, space
 setglobal shiftround
 setglobal smarttab
 setglobal tabstop=8
-setglobal softtabstop=4
-setglobal shiftwidth=4
+setglobal softtabstop=0
+setglobal shiftwidth=8
 setglobal expandtab
 setglobal autoindent
 setglobal cindent 
@@ -38,7 +38,7 @@ nmap <Leader>ev :vsplit<CR>
 nmap <Leader>eh :split<CR>
 nmap <Leader>ww <C-W>o
 
-" allow swith unsaved file
+" allow switch unsaved file
 set hidden
 
 " autocmd VimEnter * redraw!
