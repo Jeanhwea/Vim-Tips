@@ -32,8 +32,12 @@ nmap <Space> <C-D>
 
 let mapleader = ","
 "nmap <Leader>ew :e %:h<Enter>
-nmap <Leader>ew :e %:h
-nmap <Leader>ee :e #
+nmap <Leader>ew :e <C-r>=expand('%:h')<CR><CR>
+" CTRL-G
+nmap <Leader>ee :e <C-r>=expand('#')
+nmap <Leader>ev :vsplit<CR>
+nmap <Leader>eh :split<CR>
+nmap <Leader>ww <C-W>o
 
 " allow swith unsaved file
 set hidden
