@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+HERE=`cd $(dirname $0)`
+cd $HERE
 
 mkdir -p bundle/start
 
