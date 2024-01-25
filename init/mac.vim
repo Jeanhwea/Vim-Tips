@@ -1,7 +1,7 @@
-if exists("g:mac")
+if exists("g:loaded_mac")
   finish
 endif
-let g:mac=1
+let g:loaded_mac=1
 
 if has('gui_running') 
   colorscheme slate

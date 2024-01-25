@@ -1,7 +1,7 @@
-if exists("g:win")
+if exists("g:loaded_win")
   finish
 endif
-let g:win=1
+let g:loaded_win=1
 
 let $LANG='en'
 set langmenu=en
