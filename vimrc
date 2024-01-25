@@ -41,5 +41,4 @@ nmap <Leader>ev :vsplit<CR>
 nmap <Leader>eh :split<CR>
 nmap <Leader>ww <C-W>o
 
-
 " vim:set et sw=2 foldmethod=expr
