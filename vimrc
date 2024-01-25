@@ -36,8 +36,8 @@ let mapleader = ","
 "nmap <Leader>ew :e %:h<Enter>
 nmap <Leader>ew :e <C-r>=expand('%:h')<CR>
 nmap <Leader>ee :e <C-r>=expand('#')<CR>
-nmap <Leader>ev :vsplit<CR>
-nmap <Leader>eh :split<CR>
+nmap <Leader>wv :vsplit<CR>
+nmap <Leader>wh :split<CR>
 nmap <Leader>ww <C-W>o
 
 " vim:set et sw=2 foldmethod=expr
