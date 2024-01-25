@@ -8,7 +8,6 @@ elseif has("unix")
   source $HOME/.vim/init/unix.vim
 endif
 
-
 " Section: load defaults config
 if filereadable(expand("$VIMRUNTIME/defaults.vim"))
   source $VIMRUNTIME/defaults.vim
@@ -35,8 +34,8 @@ nmap <Space> <C-D>
 
 let mapleader = ","
 "nmap <Leader>ew :e %:h<Enter>
-nmap <Leader>ew :e <C-r>=expand('%:h')<CR><CR>
-nmap <Leader>ee :e <C-r>=expand('#')<CR><CR>
+nmap <Leader>ew :e <C-r>=expand('%:h')<CR>
+nmap <Leader>ee :e <C-r>=expand('#')<CR>
 nmap <Leader>ev :vsplit<CR>
 nmap <Leader>eh :split<CR>
 nmap <Leader>ww <C-W>o
