@@ -26,6 +26,7 @@ setglobal expandtab
 setglobal autoindent
 setglobal cindent 
 setglobal hidden
+setglobal belloff=all
 " setglobal number
 
 " Section: move arround quickly
