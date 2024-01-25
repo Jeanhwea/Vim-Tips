@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-HERE=`cd $(dirname $0)`
+HERE=$(dirname $0)
 cd $HERE
-
-mkdir -p bundle/start
 
 git clone https://github.com/tpope/vim-pathogen.git   ./bundle/start/pathogen
 git clone https://github.com/tpope/vim-commentary.git ./bundle/start/commentary
@@ -15,4 +13,3 @@ git clone https://github.com/tpope/vim-surround.git   ./bundle/start/surround
 git clone https://github.com/tpope/vim-unimpaired.git ./bundle/start/unimpaired
 git clone https://github.com/tpope/vim-endwise.git    ./bundle/start/endwise
 git clone https://github.com/tpope/vim-abolish.git    ./bundle/start/abolish
-
