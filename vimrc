@@ -33,7 +33,6 @@ setglobal hidden
 nmap <Space> <C-D>
 
 let mapleader = ","
-"nmap <Leader>ew :e %:h<Enter>
 nmap <Leader>ew :e <C-r>=expand('%:h')<CR>
 nmap <Leader>ee :e <C-r>=expand('#')<CR><CR>
 nmap <Leader>wv :vsplit<CR>
