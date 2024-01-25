@@ -1,8 +1,11 @@
 " Section: load OS init scripts
 if has("win64") || has("win32")
   source $HOME\\vimfiles\\init\\win.vim
-elseif has("mac")
+elseif has("mac") || has("unix")
+  source $HOME/.vim/init/unix.vim
   source $HOME/.vim/init/mac.vim
+elseif has("unix")
+  source $HOME/.vim/init/unix.vim
 endif
 
 
