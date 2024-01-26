@@ -10,4 +10,4 @@
 
 # vim bundle folder
 bundle/*
-pack/*
+pack/bundle/*
