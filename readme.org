@@ -33,5 +33,7 @@
 10. [[file:slides/s1e01-learn-keyboards.pdf][键盘发展及编辑器学习曲线]] | [[https://www.bilibili.com/video/BV1YK4y1B7NW/][视频 18]]
 11. [[file:slides/s1e02-vim-summary.pdf][Vim 原生操作总结]] | [[https://www.bilibili.com/video/BV1aV411Q7bz/][视频 19]]
 
+* 第二季：Vim 定制化功能
+
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
