@@ -9,5 +9,9 @@
 * Vim 的插件系统
 1. [[https://vimawesome.com/][Vim Awesome]]
 
+* 配置文件
+1. 配置文件惯例 ~:h vimrc~
+
 * ~&rtp~
 1. [[https://github.com/tpope/vim-pathogen][pathogen]]
+2. ~:h packages~
