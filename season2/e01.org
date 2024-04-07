@@ -1,4 +1,4 @@
-#+TITLE: Vim 介绍和七个习惯
+#+TITLE: 插件系统：武装你的 Vim 编辑器
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-04-08 Mon>
@@ -7,4 +7,7 @@
 
 
 * Vim 的插件系统
+1. [[https://vimawesome.com/][Vim Awesome]]
+
+* ~&rtp~
 1. [[https://github.com/tpope/vim-pathogen][pathogen]]
