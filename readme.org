@@ -34,6 +34,8 @@
 11. [[file:slides/s1e02-vim-summary.pdf][Vim 原生操作总结]] | [[https://www.bilibili.com/video/BV1aV411Q7bz/][视频 19]]
 
 * 第二季：Vim 定制化功能
+1. [[file:slides/s2e01-intro.pdf][Vim插件系统和runtimepath]] | [[https://www.bilibili.com/video/BV19Z421J7VR/][视频01]]
+
 
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
