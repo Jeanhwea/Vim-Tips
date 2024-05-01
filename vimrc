@@ -40,4 +40,7 @@ nmap <Leader>wv :vsplit<CR>
 nmap <Leader>wh :split<CR>
 nmap <Leader>ww <C-W>o
 
+let g:netrw_list_hide='.*\.swp$'
+" let g:netrw_hide=1
+
 " vim:set et sw=2 foldmethod=expr
