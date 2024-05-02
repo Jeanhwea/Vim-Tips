@@ -35,7 +35,7 @@
 
 * 第二季：Vim 定制化功能
 1. [[file:slides/s2e01-intro.pdf][Vim插件系统和runtimepath]] | [[https://www.bilibili.com/video/BV19Z421J7VR/][视频01]]
-
+2. [[file:slides/s2e02-git-vs-vim.pdf][git和vim的连锁反应]] | [[https://www.bilibili.com/video/BV1xb421a7mW/][视频 02]]
 
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
