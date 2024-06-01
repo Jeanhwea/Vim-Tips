@@ -37,7 +37,7 @@
 1. [[file:slides/s2e01-intro.pdf][Vim插件系统和runtimepath]] | [[https://www.bilibili.com/video/BV19Z421J7VR/][视频01]]
 2. [[file:slides/s2e02-git-vs-vim.pdf][git和vim的连锁反应]] | [[https://www.bilibili.com/video/BV1xb421a7mW/][视频 02]]
 3. [[file:slides/s2e03-surround-sensible.pdf][Sensible 和 Surround]] | [[https://www.bilibili.com/video/BV1Vz421S7JC/][视频 03]]
-4. [[file:slides/s2e04-write-plugin.pdf][编写一个简单的插件 minitool]] | [[https://www.bilibili.com/video/BV1zs421M7Qk/][视频 04]]
+4. [[file:slides/s2e04-write-plugin.pdf][编写一个简单的插件 minitool]] | [[https://github.com/Jeanhwea/vim-minitool][plugin]] | [[https://www.bilibili.com/video/BV1zs421M7Qk/][视频 04]]
 
 * 链接
 1. [[http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html][键盘图]]
