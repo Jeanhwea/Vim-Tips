@@ -39,6 +39,7 @@ nmap <Leader>ee :e <C-r>=expand('#')<CR><CR>
 nmap <Leader>wv :vsplit<CR>
 nmap <Leader>wh :split<CR>
 nmap <Leader>ww <C-W>o
+nmap <Leader>ff :Moldfiles<CR>
 
 let g:netrw_list_hide='.*\.swp$'
 " let g:netrw_hide=1
