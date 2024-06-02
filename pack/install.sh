@@ -16,5 +16,8 @@ git clone https://github.com/tpope/vim-endwise.git     ./bundle/start/endwise
 git clone https://github.com/tpope/vim-abolish.git     ./bundle/start/abolish
 git clone https://github.com/tpope/vim-rhubarb.git     ./bundle/start/rhubarb
 
+# rust
+git clone https://github.com/rust-lang/rust.vim.git    ./bundle/start/rustlang
+
 # my plugins
 git clone https://github.com/Jeanhwea/vim-minitool.git ./bundle/start/minitool
