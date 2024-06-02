@@ -14,6 +14,7 @@ git clone https://github.com/tpope/vim-surround.git    ./bundle/start/surround
 git clone https://github.com/tpope/vim-unimpaired.git  ./bundle/start/unimpaired
 git clone https://github.com/tpope/vim-endwise.git     ./bundle/start/endwise
 git clone https://github.com/tpope/vim-abolish.git     ./bundle/start/abolish
+git clone https://github.com/tpope/vim-rhubarb.git     ./bundle/start/rhubarb
 
 # my plugins
 git clone https://github.com/Jeanhwea/vim-minitool.git ./bundle/start/minitool
