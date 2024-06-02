@@ -34,8 +34,8 @@
 11. [[file:slides/s1e02-vim-summary.pdf][vim 原生操作总结]] | [[https://www.bilibili.com/video/bv1av411q7bz/][视频 19]]
 
 * 第二季：vim 定制化功能
-1. [[file:slides/s2e01-intro.pdf][vim插件系统和runtimepath]] | [[https://www.bilibili.com/video/bv19z421j7vr/][视频01]]
-2. [[file:slides/s2e02-git-vs-vim.pdf][git和vim的连锁反应]] | [[https://www.bilibili.com/video/bv1xb421a7mw/][视频 02]]
+1. [[file:slides/s2e01-intro.pdf][vim 插件系统和 runtimepath]] | [[https://www.bilibili.com/video/bv19z421j7vr/][视频01]]
+2. [[file:slides/s2e02-git-vs-vim.pdf][git 和 vim 的连锁反应]] | [[https://www.bilibili.com/video/bv1xb421a7mw/][视频 02]]
 3. [[file:slides/s2e03-surround-sensible.pdf][sensible 和 surround]] | [[https://www.bilibili.com/video/bv1vz421s7jc/][视频 03]]
 4. [[file:slides/s2e04-write-plugin.pdf][编写一个简单的插件 minitool]] | [[https://github.com/jeanhwea/vim-minitool][plugin]] | [[https://www.bilibili.com/video/bv1zs421m7qk/][视频 04]]
 5. [[file:slides/s2e05-scriptease.pdf][scriptease 助力编写 vim 插件]] | [[https://www.bilibili.com/video/BV1gb421e7Xt/][视频 05]]
